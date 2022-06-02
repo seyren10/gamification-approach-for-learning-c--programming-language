@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     public static Player Instance;
     private PlayerMovement playerMovement;
 
-
     //state
     private Vector2 movement;
 
@@ -19,29 +18,40 @@ public class Player : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
 
+    #region Movement
     //movement
-    public void MoveUp()
+    public void MoveUp(int repeat = 1)
     {
         movement.y = 1f;
         movement.x = 0;
-        playerMovement.Push(movement);
+        PushMoveToQueue(movement, repeat);
     }
-    public void MoveDown()
+    public void MoveDown(int repeat = 1)
     {
         movement.y = -1f;
         movement.x = 0;
-        playerMovement.Push(movement);
+        PushMoveToQueue(movement, repeat);
     }
-    public void MoveRight()
+    public void MoveRight(int repeat = 1)
     {
         movement.x = 1f;
         movement.y = 0;
-        playerMovement.Push(movement);
+        PushMoveToQueue(movement, repeat);
     }
-    public void MoveLeft()
+    public void MoveLeft(int repeat = 1)
     {
         movement.x = -1f;
         movement.y = 0;
-        playerMovement.Push(movement);
+        PushMoveToQueue(movement, repeat);
+
     }
+
+    private void PushMoveToQueue(Vector2 movement, int repeatCount)
+    {
+        for (int i = 0; i < repeatCount; i++)
+        {
+            playerMovement.Push(movement);
+        }
+    }
+    #endregion
 }

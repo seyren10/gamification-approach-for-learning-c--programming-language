@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Queue<Vector2> movementQueue;
 
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
