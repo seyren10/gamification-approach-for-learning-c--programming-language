@@ -3,86 +3,83 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour, IOnactionComplete
 {
-
     //cached ref
-    private Rigidbody2D rb;
+    private Transform movePoint;
+
+    //config
+    [SerializeField] private float movementSpeed = 5f;
+    [SerializeField] private int movementStep = 3;
+
 
     //state
-    [Header("Movement Config")]
-    [SerializeField] private float moveSpeed = 8f;
-    [SerializeField] private float moveStep = 3f;
-    [SerializeField] private float delayBetweenMovement = .5f;
+    private bool movementStarted; //to ensure that the player can move only if they give one of the methods has being called.
 
-    private Vector2 movement;
-    private Transform movePoint;
-    private bool isPlayerAtDest;
+    //instance
+    public static PlayerMovement Instance;
 
-    private float movementDelay;
-
-    private Queue<Vector2> movementQueue;
+    public event EventHandler onActionComplete;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        movementQueue = new Queue<Vector2>();
-        movePoint = transform.Find("movePoint").GetComponent<Transform>();
-    }
+        //dettach movePoint transform from the player
+        movePoint = transform.Find("movePoint");
+        movePoint.SetParent(null);
 
-    private void Start()
-    {
-        movePoint.parent = null;
-        movementDelay = delayBetweenMovement;
+        //instance
+        Instance = this;
     }
 
     private void Update()
     {
-        //Getting the distance of the player and movePoint
-        isPlayerAtDest = Vector2.Distance(rb.position, movePoint.position) < Mathf.Epsilon ? true : false;
+        float distance = Vector2.Distance(transform.position, movePoint.position);
 
+        transform.position = Vector2.MoveTowards(transform.position, movePoint.position, movementSpeed * Time.deltaTime);
 
-        //if player is not in its destination(movepoint) then Move the MovePoint
-        //if the player is in its destination(movepoint), then we add delay before moving again.
-        if (!isPlayerAtDest)
-            SetMovePosition();
-        else if (CanMove())
-            MovePlayer();
-    }
-
-    public void Push(Vector2 movement)
-    {
-        movementQueue.Enqueue(movement);
-    }
-
-    private void SetMovePosition()
-    {
-        rb.position = Vector2.MoveTowards(rb.position, movePoint.position, moveSpeed * Time.deltaTime);
-    }
-
-    private void MovePlayer()
-    {
-        //making sure that the movement queue is not empty before Dequeing the movement
-        if (movementQueue.Count > 0)
+        //if the player reaches the movePoint and the movement has started
+        if (distance == 0 && movementStarted)
         {
-            movement = movementQueue.Dequeue();
-
-            //move the player to movePoint
-            movePoint.position = (Vector2)movePoint.position + (movement * moveStep);
-            movementDelay = delayBetweenMovement;
+            movementStarted = false;
+            //Action Completed, Trigger the event
+            onActionComplete?.Invoke(this, EventArgs.Empty);
         }
-
     }
 
-
-    private bool CanMove()
+    public void MoveUp()
     {
-        // if player is in destination, then we add delay before moving again
-        if (movementDelay >= 0f)
-        {
-            movementDelay -= Time.deltaTime;
-            return false;
-        }
-        return true;
+        //move the movePoint to North
+        Vector2 moveDirection = Vector2.up;
+        movePoint.Translate(moveDirection * movementStep);
+
+        movementStarted = true;
     }
+    public void MoveDown()
+    {
+        //move the movePoint to South
+        Vector2 moveDirection = Vector2.down;
+        movePoint.Translate(moveDirection * movementStep);
+
+        movementStarted = true;
+    }
+    public void MoveLeft()
+    {
+        //move the movePoint to West
+        Vector2 moveDirection = Vector2.left;
+        movePoint.Translate(moveDirection * movementStep);
+
+        movementStarted = true;
+
+    }
+    public void MoveRight()
+    {
+        //move the movePoint to East
+        Vector2 moveDirection = Vector2.right;
+        movePoint.Translate(moveDirection * movementStep);
+
+        movementStarted = true;
+
+    }
+
+
 }

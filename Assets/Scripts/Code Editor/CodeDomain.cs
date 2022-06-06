@@ -32,7 +32,7 @@ public class CodeDomain
                 ICodeEditor instance = type.CreateInstanceRaw<ICodeEditor>();
 
                 //run code
-                instance.Main();
+                instance.Init();
 
             }
 

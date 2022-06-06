@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public interface ICodeEditor
+//ABSTRACT
+public interface ICommand
 {
-    void Main();
-    void Init();
+    void Execute();
 }

@@ -10,7 +10,6 @@ public class CodeEditorManager : MonoBehaviour
     [SerializeField] private TMP_InputField codeEditorInput;
     private TMP_Text iFTextComponent;
 
-
     //state variables
     int indentCount;
     bool inputFieldSelected;

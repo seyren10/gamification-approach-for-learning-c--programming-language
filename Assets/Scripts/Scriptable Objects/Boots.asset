@@ -14,45 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 0
   itemMethods:
-  - methodName: Boots.MoveUp();
+  - methodName: boots.MoveUp();
     methodDesc: 'Move the player to North, you can assign a value to this method
       as an argument to this method to specify how many steps to move up
 
 
       e.g.
-      "Boots.MoveUp(3)"
+      "boots.MoveUp(3)"
 
 
       the above code means the player will move Up 3 times.'
-  - methodName: Boots.MoveDown();
+  - methodName: boots.MoveDown();
     methodDesc: 'Move the player to South, you can assign a value to this method
       as an argument to this method to specify how many steps to move up
 
 
       e.g.
-      "Boots.MoveDown(3)"
+      "boots.MoveDown(3)"
 
 
       the above code means the player will move Down
       3 times.'
-  - methodName: Boots.MoveLeft();
+  - methodName: boots.MoveLeft();
     methodDesc: 'Move the player to West, you can assign a value to this method as
       an argument to this method to specify how many steps to move up
 
 
       e.g.
-      "Boots.MoveLeft(3)"
+      "boots.MoveLeft(3)"
 
 
       the above code means the player will move Left
       3 times.'
-  - methodName: Boots.MoveRight();
+  - methodName: boots.MoveRight();
     methodDesc: 'Move the player to West, you can assign a value to this method as
       an argument to this method to specify how many steps to move up
 
 
       e.g.
-      "Boots.MoveRight(3)"
+      "boots.MoveRight(3)"
 
 
       the above code means the player will move Right
