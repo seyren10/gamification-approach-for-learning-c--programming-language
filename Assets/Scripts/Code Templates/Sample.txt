@@ -1,0 +1,8 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		<#ff00ff>Hello </color>
+	}
+}

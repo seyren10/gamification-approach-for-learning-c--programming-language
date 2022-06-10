@@ -13,7 +13,7 @@ public class ItemUI : MonoBehaviour
     {
         itemTemplate.gameObject.SetActive(false);
 
-        foreach (Item item in itemListSO.list)
+        foreach (ItemSO item in itemListSO.list)
         {
             //creating the template
             Transform newItem = Instantiate(itemTemplate, transform);
@@ -40,7 +40,7 @@ public class ItemUI : MonoBehaviour
         }
     }
 
-    private void ItemMethods(Item item, Transform itemMethods, Button methodTemplate)
+    private void ItemMethods(ItemSO item, Transform itemMethods, Button methodTemplate)
     {
         //iterating through each method in itemSO
         foreach (ItemMethod itemMethod in item.itemMethods)

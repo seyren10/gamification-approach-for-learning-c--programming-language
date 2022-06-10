@@ -6,8 +6,6 @@ using System.Linq;
 //INVOKER
 public class ActionController : MonoBehaviour
 {
-
-
     public static ActionController Instance;
     private Queue<ICommand> commandQueue;
 
@@ -30,6 +28,7 @@ public class ActionController : MonoBehaviour
 
     public void AddCommand(ICommand newCommand)
     {
+
         commandQueue.Enqueue(newCommand);
     }
 
@@ -37,26 +36,13 @@ public class ActionController : MonoBehaviour
     {
         if (commandQueue.Count > 0)
         {
-
             ICommand dequeuedAction = commandQueue.Dequeue();
-
             dequeuedAction.Execute();
-            Debug.Log("QUEUE:");
-
-            foreach (var item in commandQueue)
-            {
-                Debug.Log(item.ToString());
-            }
         }
     }
 
     private void IOnActionComplete_OnActionComplete(object sender, System.EventArgs e)
     {
         DequeueAction();
-    }
-
-    public void ClearQueue()
-    {
-        commandQueue.Clear();
     }
 }

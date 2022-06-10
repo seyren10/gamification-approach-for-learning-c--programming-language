@@ -4,7 +4,7 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 
-public class CodeEditorManager : MonoBehaviour
+public class CodeIndentation : MonoBehaviour
 {
     //cached ref
     [SerializeField] private TMP_InputField codeEditorInput;
@@ -96,13 +96,6 @@ public class CodeEditorManager : MonoBehaviour
     }
 
 
-    private IEnumerable<string> EnumerateLines(TMP_Text text)
-    {
-        foreach (TMP_LineInfo line in text.GetTextInfo(text.text).lineInfo)
-        {
-            yield return text.text.Substring(line.firstCharacterIndex, line.characterCount);
-        }
-    }
 
 
     //when user click the inputfield
@@ -116,5 +109,17 @@ public class CodeEditorManager : MonoBehaviour
     {
         inputFieldSelected = false;
     }
+
+    //get input text line information
+    private IEnumerable<string> EnumerateLines(TMP_Text text)
+    {
+        foreach (TMP_LineInfo line in text.GetTextInfo(text.text).lineInfo)
+        {
+            yield return text.text.Substring(line.firstCharacterIndex, line.characterCount);
+        }
+    }
+
+
+
 
 }

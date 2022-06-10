@@ -9,7 +9,6 @@ public class CodeEditor : MonoBehaviour
     //cached ref
     [SerializeField] private TextAsset codeTemplate;
     [SerializeField] private TMP_InputField textEditorWindow;
-
     //config
     [SerializeField][TextArea(15, 15)] private string codeReferences; // add references for the user to reduce code complexity.
 
