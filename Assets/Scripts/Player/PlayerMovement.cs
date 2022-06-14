@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
     private Transform movePoint;
     private Animator animator;
     private SpriteRenderer[] bodyParts;
+    [SerializeField] private Transform startTransform;
 
     //config
     [SerializeField] private float movementSpeed = 5f;
@@ -42,9 +43,10 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
 
     private void Update()
     {
+
         if (collided)
         {
-            //reset position
+            //reset position to prevent player from walking outside the bounding area(collision area)
             ResetPosition();
             ActionComplete();
 
@@ -60,6 +62,13 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         {
             ActionComplete();
         }
+    }
+
+    //move player to the starting position
+    public void MoveToStart()
+    {
+        transform.position = startTransform.position;
+        movePoint.position = startTransform.position;
     }
 
 
@@ -170,6 +179,9 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         transform.position = playerLastPosition;
         movePoint.position = transform.position;
     }
+
+
+
 
 
 }
