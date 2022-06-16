@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class ObjectiveUI : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class ObjectiveUI : MonoBehaviour
 
     [Header("Goal Config")]
     [SerializeField] private Transform goalTemplate;
-    [SerializeField] private Sprite goalCompleteSprite;
+    [SerializeField] private GoalSpriteInfo goalSpriteInfo;
 
 
     //state
@@ -23,9 +24,12 @@ public class ObjectiveUI : MonoBehaviour
 
     private void Start()
     {
-        //EVENTS
+        //events: goal events
         ObjectiveEvent.onGoalCompleted.AddListener(Goal_OnGoalCompleted);
         ObjectiveEvent.onGoalUpdate.AddListener(UpdateGoalUI);
+
+        //event: when user click the run code button
+        LevelEvent.OnRunCode.AddListener(ResetGoalUI);
 
         goalTemplateDictionary = new Dictionary<GoalSO, Transform>();
 
@@ -52,7 +56,7 @@ public class ObjectiveUI : MonoBehaviour
             Transform goalTransform = goalTemplateDictionary[goal];
             if (goal.Completed())
             {
-                goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalCompleteSprite;
+                goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalSpriteInfo.goalCompleteSprite;
             }
         }
     }
@@ -65,4 +69,23 @@ public class ObjectiveUI : MonoBehaviour
             goalTransform.Find("goalStatus").GetComponent<TMP_Text>().text = $"{goal.GetCurrentAmount()}/{goal.requiredAmount}";
         }
     }
+
+    private void ResetGoalUI()
+    {
+        foreach (var goal in objective.goals)
+        {
+            Transform goalTransform = goalTemplateDictionary[goal];
+            goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalSpriteInfo.goalIncompleteSprite;
+        }
+
+        UpdateGoalUI();
+    }
+}
+
+[Serializable]
+public struct GoalSpriteInfo
+{
+    public Sprite goalIncompleteSprite;
+    public Sprite goalCompleteSprite;
+    public Sprite goalFailedSprite;
 }

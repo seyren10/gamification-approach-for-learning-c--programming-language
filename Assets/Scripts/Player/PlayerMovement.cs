@@ -39,6 +39,9 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
 
         //instance
         Instance = this;
+
+        //event: user click the run code button
+        LevelEvent.OnRunCode.AddListener(ResetPosition);
     }
 
     private void Update()
@@ -63,16 +66,6 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
             ActionComplete();
         }
     }
-
-    //move player to the starting position
-    public void MoveToStart()
-    {
-        transform.position = startTransform.position;
-        movePoint.position = startTransform.position;
-    }
-
-
-
     public void MoveUp()
     {
         playerLastPosition = transform.position;
@@ -150,6 +143,11 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         }
     }
 
+    private void ResetPosition()
+    {
+        transform.position = startTransform.position;
+        movePoint.position = startTransform.position;
+    }
 
     private void ActionComplete()
     {
@@ -173,15 +171,6 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         if (col.gameObject.CompareTag("Goal"))
             Debug.Log("Game Finished");
     }
-
-    private void ResetPosition()
-    {
-        transform.position = playerLastPosition;
-        movePoint.position = transform.position;
-    }
-
-
-
 
 
 }

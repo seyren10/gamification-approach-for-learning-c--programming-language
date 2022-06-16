@@ -19,6 +19,7 @@ public class BaseEvent
 
     public void AddListener(Action listener)
     {
+        action -= listener;
         action += listener;
     }
 
@@ -42,6 +43,7 @@ public class BaseEvent<T>
 
     public void AddListener(Action<T> listener)
     {
+        action -= listener;
         action += listener;
     }
 

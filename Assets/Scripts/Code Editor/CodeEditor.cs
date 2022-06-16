@@ -12,7 +12,16 @@ public class CodeEditor : MonoBehaviour
     //config
     [SerializeField][TextArea(15, 15)] private string codeReferences; // add references for the user to reduce code complexity.
 
+    //instance
+    public static CodeEditor Instance;
+
     private CodeDomain codeDomain;
+
+    private void Awake()
+    {
+        //instance
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
