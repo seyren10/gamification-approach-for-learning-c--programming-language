@@ -4,5 +4,13 @@ using UnityEngine;
 
 public static class LevelEvent
 {
-    public static readonly BaseEvent OnRunCode = new BaseEvent();
+    public static BaseEvent OnRunCode = new BaseEvent();
+    public static BaseEvent OnLevelCompleted = new BaseEvent();
+
+    public static void Init()
+    {
+        OnRunCode = new BaseEvent();
+        OnLevelCompleted = new BaseEvent();
+    }
+
 }

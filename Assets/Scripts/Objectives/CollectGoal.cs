@@ -30,5 +30,6 @@ public class CollectGoal : GoalSO
 
 public enum CollectibleType
 {
-    CornSeed
+    CornSeed,
+    TomatoSeed
 }

@@ -10,9 +10,13 @@ public class ObjectiveSO : ScriptableObject
     public GoalSO[] goals;
     private bool objectiveComplete;
 
+    //instance
+    public static ObjectiveSO Instance;
+
     public void Init()
     {
-        ObjectiveEvent.onGoalCompleted.AddListener(Evaluate);
+        //instance
+        Instance = this;
         objectiveComplete = false;
 
         //event: when user click the run code button
@@ -22,23 +26,17 @@ public class ObjectiveSO : ScriptableObject
         foreach (var goal in goals)
         {
             goal.Init();
-
-            //listen to the goal when its completed
-            ObjectiveEvent.onGoalCompleted.AddListener(Evaluate);
         }
     }
 
-    public void Evaluate()
+    public int GetCompletedGoalCount()
     {
-        if (goals.All(g => g.Completed()))
-        {
-            objectiveComplete = true;
-        }
+        return goals.Sum(a => a.GetCurrentAmount());
     }
 
-    public bool GetObjectiveComplete()
+    public int GetTotalGoals()
     {
-        return objectiveComplete;
+        return goals.Sum(a => a.requiredAmount);
     }
 
     private void ResetGoal()

@@ -19,6 +19,7 @@ public class ObjectiveUI : MonoBehaviour
     private Dictionary<GoalSO, Transform> goalTemplateDictionary;
     private void Awake()
     {
+        goalTemplateDictionary = new Dictionary<GoalSO, Transform>();
         objective.Init();
     }
 
@@ -31,7 +32,10 @@ public class ObjectiveUI : MonoBehaviour
         //event: when user click the run code button
         LevelEvent.OnRunCode.AddListener(ResetGoalUI);
 
-        goalTemplateDictionary = new Dictionary<GoalSO, Transform>();
+        //event: when user finish the level
+        LevelEvent.OnLevelCompleted.AddListener(LevelCompeleted);
+
+
 
 
 
@@ -79,6 +83,18 @@ public class ObjectiveUI : MonoBehaviour
         }
 
         UpdateGoalUI();
+    }
+
+    private void LevelCompeleted()
+    {
+        foreach (var goal in objective.goals)
+        {
+            Transform goalTransform = goalTemplateDictionary[goal];
+            if (!goal.Completed())
+            {
+                goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalSpriteInfo.goalFailedSprite;
+            }
+        }
     }
 }
 

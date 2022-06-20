@@ -20,6 +20,8 @@ public class CodeRunner : MonoBehaviour
 
     private void RunCode()
     {
+        //run code on textfield. IMPORTANT: this code has to be run on the end of this this method
+
         //level must not reset on the first run.
         if (firstRun)
         {
@@ -27,6 +29,8 @@ public class CodeRunner : MonoBehaviour
 
             //run code on textfield. IMPORTANT: this code has to be run on the end of this this method
             CodeEditor.Instance.RunCode();
+
+            Debug.Log("First Run");
         }
         else
         {
@@ -35,6 +39,8 @@ public class CodeRunner : MonoBehaviour
 
             //run code on textfield. IMPORTANT: this code has to be run on the end of this this method
             CodeEditor.Instance.RunCode();
+
+
         }
     }
 }

@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         if (collided)
         {
             //reset position to prevent player from walking outside the bounding area(collision area)
-            ResetPosition();
+            SetLastPosition();
             ActionComplete();
 
             collided = false;
@@ -63,6 +63,7 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         //if the player reaches the movePoint and the movement has started
         if (distance == 0 && movementStarted)
         {
+            Debug.Log("Action cmplete");
             ActionComplete();
         }
     }
@@ -121,6 +122,7 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
     }
     public void MoveRight()
     {
+        Debug.Log("Move RIght");
         playerLastPosition = transform.position;
 
         animator.SetBool("isMoving", true);
@@ -147,6 +149,12 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
     {
         transform.position = startTransform.position;
         movePoint.position = startTransform.position;
+    }
+
+    private void SetLastPosition()
+    {
+        transform.position = playerLastPosition;
+        movePoint.position = transform.position;
     }
 
     private void ActionComplete()

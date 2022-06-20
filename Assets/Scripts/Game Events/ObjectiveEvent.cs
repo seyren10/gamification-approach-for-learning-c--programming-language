@@ -2,10 +2,21 @@ using System;
 public static class ObjectiveEvent
 {
     //Goal Events
-    public static readonly BaseEvent onGoalCompleted = new BaseEvent();
-    public static readonly BaseEvent onGoalUpdate = new BaseEvent();
-    public static readonly BaseEvent onGoalReset = new BaseEvent();
+    public static BaseEvent onGoalCompleted = new BaseEvent();
+    public static BaseEvent onGoalUpdate = new BaseEvent();
+    public static BaseEvent onGoalReset = new BaseEvent();
 
 
-    public static readonly BaseEvent<Collectible> onCollect = new BaseEvent<Collectible>();
+    public static BaseEvent<Collectible> onCollect = new BaseEvent<Collectible>();
+
+    public static void Init()
+    {
+
+        onGoalCompleted = new BaseEvent();
+        onGoalUpdate = new BaseEvent();
+        onGoalReset = new BaseEvent();
+
+
+        onCollect = new BaseEvent<Collectible>();
+    }
 }

@@ -37,7 +37,7 @@ public abstract class GoalSO : ScriptableObject
         return completed;
     }
 
-    protected void Complete()
+    private void Complete()
     {
         completed = true;
         ObjectiveEvent.onGoalCompleted.Invoke();

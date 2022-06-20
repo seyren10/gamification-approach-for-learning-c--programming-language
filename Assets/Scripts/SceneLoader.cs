@@ -5,17 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public static SceneLoader Instance;
-    private void Awake()
-    {
-        var sceneLoaderCount = FindObjectsOfType<SceneLoader>().Length;
-
-        if (sceneLoaderCount > 1)
-            Destroy(this.gameObject);
-
-        else
-            DontDestroyOnLoad(this.gameObject);
-    }
 
     public void LoadInGameCodeEditor()
     {
@@ -27,8 +16,26 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void LoadGame()
+    public void LoadNextScene()
     {
-        SceneManager.LoadScene("Game");
+        InitializeEvents();
+
+        var index = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(index + 1);
+    }
+
+    public void ReloadScene()
+    {
+        InitializeEvents();
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    //IMPORTANT: you need to create new class of class that derives from BaseEvent class
+    //this is to remove all the listeners from devired classes of Base event
+    private void InitializeEvents()
+    {
+        LevelEvent.Init();
+        ObjectiveEvent.Init();
     }
 }
