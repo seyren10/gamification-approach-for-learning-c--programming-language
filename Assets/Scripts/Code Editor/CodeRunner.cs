@@ -29,8 +29,6 @@ public class CodeRunner : MonoBehaviour
 
             //run code on textfield. IMPORTANT: this code has to be run on the end of this this method
             CodeEditor.Instance.RunCode();
-
-            Debug.Log("First Run");
         }
         else
         {

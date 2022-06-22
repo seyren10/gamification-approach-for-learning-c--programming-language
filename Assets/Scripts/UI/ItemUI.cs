@@ -16,7 +16,7 @@ public class ItemUI : MonoBehaviour
         foreach (ItemSO item in itemListSO.list)
         {
             //creating the template
-            Transform newItem = Instantiate(itemTemplate, transform);
+            Transform newItem = Instantiate(itemTemplate, itemTemplate.GetComponentInParent<Transform>());
             newItem.gameObject.SetActive(true);
 
             //apply image to the template
@@ -55,11 +55,13 @@ public class ItemUI : MonoBehaviour
             //add listener when user click the button
             newMethodTemplate.onClick.AddListener(() =>
             {
-
                 //display the method description
                 itemMethodDesc.gameObject.SetActive(true);
                 itemMethodDesc.Find("itemMethodName").GetComponent<TMP_Text>().text = newMethodTemplateText.text;
                 itemMethodDesc.Find("itemMethodDesc").GetComponent<TMP_Text>().text = itemMethod.methodDesc;
+                itemMethodDesc.Find("itemUsage").Find("text").GetComponent<TMP_Text>().text = itemMethod.methodUsage;
+                itemMethodDesc.Find("itemUsageDesc").GetComponent<TMP_Text>().text = itemMethod.usageDescription;
+
             });
         }
     }

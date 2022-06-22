@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public abstract class GoalSO : ScriptableObject
 {
-    public string description;
+    [TextArea(5, 5)] public string description;
     public int requiredAmount;
 
     protected int currentAmount;

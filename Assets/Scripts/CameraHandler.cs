@@ -8,21 +8,21 @@ public class CameraHandler : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera cmCamera;
 
     //config
-    [SerializeField] private float moveSpeed = 10f;
 
 
-    //state 
     [Header("Camera Zoom")]
     [SerializeField] private float zoomAmount = 2f;
     [SerializeField] private float zoomSpeed = 10f;
     [SerializeField] private float minZoom = 10f;
     [SerializeField] private float maxZoom = 50f;
 
-
+    //state 
     private float camOrthoSize;
     private float targetCamOrthoSize;
+    private bool drag;
 
-    private Vector2 moveDir;
+    private Vector3 mouseOrigin;
+    private Vector3 mouseDifference;
 
     private void Start()
     {
@@ -31,8 +31,27 @@ public class CameraHandler : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetMouseButton(1))
+        {
+
+            mouseDifference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            if (!drag)
+            {
+                drag = true;
+                mouseOrigin = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            }
+        }
+        else
+            drag = false;
+
         HandleMovement();
 
+        HandleZoom();
+
+    }
+
+    private void HandleZoom()
+    {
         var a = cmCamera.m_Lens.OrthographicSize;
 
         targetCamOrthoSize += -Input.mouseScrollDelta.y * zoomAmount;
@@ -40,14 +59,16 @@ public class CameraHandler : MonoBehaviour
 
         camOrthoSize = Mathf.Lerp(camOrthoSize, targetCamOrthoSize, zoomSpeed * Time.deltaTime);
         cmCamera.m_Lens.OrthographicSize = camOrthoSize;
-
     }
 
     private void HandleMovement()
     {
-        moveDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveDir.Normalize();
+        if (drag)
+        {
+            transform.position = mouseOrigin - mouseDifference;
+        }
 
-        transform.position += (Vector3)moveDir * moveSpeed * Time.deltaTime;
+
+
     }
 }

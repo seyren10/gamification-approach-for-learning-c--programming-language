@@ -44,6 +44,14 @@ public class CodeEditor : MonoBehaviour
         codeEditorModifiedText = InsertCodeReferences(codeEditorModifiedText);
 
         codeDomain.RunCode(codeEditorModifiedText);
+
+
+        //PART OF OBJECTIVE SYSTEM: making sure that LinecodeGoal is existing on scene
+        if (LineCodeGoal.Instance != null)
+        {
+            //giving the text to evaluate
+            LineCodeGoal.Instance.SetCodeText(textEditorWindow.textComponent.text);
+        }
     }
 
     private string InsertCodeReferences(string code)
@@ -53,4 +61,8 @@ public class CodeEditor : MonoBehaviour
 
         return string.Concat(firstString, codeReferences, code[insertPosition]);
     }
+
+
+
+
 }

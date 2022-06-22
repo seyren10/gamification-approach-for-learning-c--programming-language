@@ -15,46 +15,36 @@ MonoBehaviour:
   itemType: 0
   itemMethods:
   - methodName: boots.MoveUp();
-    methodDesc: 'Move the player to North, you can assign a value to this method
-      as an argument to this method to specify how many steps to move up
-
-
-      e.g.
-      "boots.MoveUp(3)"
-
-
-      the above code means the player will move Up 3 times.'
+    methodDesc: Move the player to North, you can assign a value to this method as
+      an argument to specify how many steps to move.
+    methodUsage: boots.MoveUp(3);
+    usageDescription: the above example will move the player in Upward direction
+      3 times. Assigning an argument to this method will save you time compare to
+      typing 3 lines of code with the same method call.
   - methodName: boots.MoveDown();
     methodDesc: 'Move the player to South, you can assign a value to this method
-      as an argument to this method to specify how many steps to move up
+      as an argument to specify how many steps to move.
 
 
-      e.g.
-      "boots.MoveDown(3)"
-
-
-      the above code means the player will move Down
-      3 times.'
+'
+    methodUsage: boots.MoveDown(3);
+    usageDescription: the above example will move the player in Downward direction
+      3 times. Assigning an argument to this method will save you time compare to
+      typing 3 lines of code with the same method call.
   - methodName: boots.MoveLeft();
-    methodDesc: 'Move the player to West, you can assign a value to this method as
-      an argument to this method to specify how many steps to move up
-
-
-      e.g.
-      "boots.MoveLeft(3)"
-
-
-      the above code means the player will move Left
-      3 times.'
+    methodDesc: Move the player to West, you can assign a value to this method as
+      an argument to specify how many steps to move.
+    methodUsage: boots.MoveLeft(3);
+    usageDescription: the above example will move the player in left direction 3
+      times. Assigning an argument to this method will save you time compare to typing
+      3 lines of code with the same method call.
   - methodName: boots.MoveRight();
-    methodDesc: 'Move the player to West, you can assign a value to this method as
-      an argument to this method to specify how many steps to move up
+    methodDesc: 'Move the player to South, you can assign a value to this method
+      as an argument to specify how many steps to move.
 
-
-      e.g.
-      "boots.MoveRight(3)"
-
-
-      the above code means the player will move Right
-      3 times.'
-  graphic: {fileID: 21300000, guid: c88664f7b6e495d47b8222e6143ca9f7, type: 3}
+'
+    methodUsage: boots.MoveRight(3);
+    usageDescription: the above example will move the player in left direction 3
+      times. Assigning an argument to this method will save you time compare to typing
+      3 lines of code with the same method call.
+  graphic: {fileID: 21300000, guid: 0f85a3301c8dcf54aa10f62415944d3e, type: 3}

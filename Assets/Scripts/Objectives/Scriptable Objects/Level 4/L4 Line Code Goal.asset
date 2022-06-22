@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40590e548b8ad0a46a31b6ceab59be33, type: 3}
+  m_Name: L4 Line Code Goal
+  m_EditorClassIdentifier: 
+  description: Finish the level with at most <#2c3e50>5</color> lines of code. (the
+    count will start below your <#2c3e50>public void Main()</color> method)
+  requiredAmount: 1
+  maxLineCode: 5

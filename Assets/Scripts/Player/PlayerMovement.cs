@@ -63,7 +63,6 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         //if the player reaches the movePoint and the movement has started
         if (distance == 0 && movementStarted)
         {
-            Debug.Log("Action cmplete");
             ActionComplete();
         }
     }
@@ -122,7 +121,6 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
     }
     public void MoveRight()
     {
-        Debug.Log("Move RIght");
         playerLastPosition = transform.position;
 
         animator.SetBool("isMoving", true);
@@ -173,12 +171,5 @@ public class PlayerMovement : MonoBehaviour, IOnactionComplete
         if (col.gameObject.CompareTag("Wall"))
             collided = true;
     }
-
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("Goal"))
-            Debug.Log("Game Finished");
-    }
-
 
 }

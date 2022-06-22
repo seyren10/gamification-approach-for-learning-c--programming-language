@@ -60,7 +60,9 @@ public class ObjectiveUI : MonoBehaviour
             Transform goalTransform = goalTemplateDictionary[goal];
             if (goal.Completed())
             {
-                goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalSpriteInfo.goalCompleteSprite;
+                var goalStatus = goalTransform.Find("statusIcon").GetComponent<Image>();
+                goalStatus.sprite = goalSpriteInfo.goalCompleteSprite;
+                goalStatus.color = Color.green;
             }
         }
     }
@@ -79,7 +81,10 @@ public class ObjectiveUI : MonoBehaviour
         foreach (var goal in objective.goals)
         {
             Transform goalTransform = goalTemplateDictionary[goal];
-            goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalSpriteInfo.goalIncompleteSprite;
+            var goalStatus = goalTransform.Find("statusIcon").GetComponent<Image>();
+            goalStatus.sprite = goalSpriteInfo.goalIncompleteSprite;
+            goalStatus.color = Color.yellow;
+
         }
 
         UpdateGoalUI();
@@ -92,7 +97,9 @@ public class ObjectiveUI : MonoBehaviour
             Transform goalTransform = goalTemplateDictionary[goal];
             if (!goal.Completed())
             {
-                goalTransform.Find("statusIcon").GetComponent<Image>().sprite = goalSpriteInfo.goalFailedSprite;
+                var goalStatus = goalTransform.Find("statusIcon").GetComponent<Image>();
+                goalStatus.sprite = goalSpriteInfo.goalFailedSprite;
+                goalStatus.color = Color.red;
             }
         }
     }
