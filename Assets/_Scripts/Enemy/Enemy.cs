@@ -35,6 +35,8 @@ public class Enemy : MonoBehaviour
 
         //event: when hit by player
         health.OnTakeDamage.AddListener(Health_OnTakeDamage);
+        //event: when enemy get killed
+        health.OnKill.AddListener(Health_OnKill);
 
         attackTime = timeBtwnAttack;
     }
@@ -100,11 +102,20 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    #region "EVENT CALL"
     private void Health_OnTakeDamage()
     {
         //play hurt Animation
         animator.SetTrigger("hurt");
     }
+
+    private void Health_OnKill()
+    {
+        //invoke the objective goal
+        ObjectiveEvent.onEnemyKill.Invoke();
+    }
+    #endregion
+
 
     private void FaceTargetDirection()
     {

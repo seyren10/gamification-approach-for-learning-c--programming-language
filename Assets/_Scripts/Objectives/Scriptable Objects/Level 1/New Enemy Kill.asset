@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98737fc97f2f5ef488cbc7073440a2b6, type: 3}
-  m_Name: Tomato Seed Goal
+  m_Script: {fileID: 11500000, guid: 4993b50c552a1614cbab4507cbd8c8cb, type: 3}
+  m_Name: New Enemy Kill
   m_EditorClassIdentifier: 
-  description: Collect 1 Tomato Seed
-  requiredAmount: 1
-  collectibleType: 1
+  description: Defeat 1 enemy
+  requiredAmount: 2

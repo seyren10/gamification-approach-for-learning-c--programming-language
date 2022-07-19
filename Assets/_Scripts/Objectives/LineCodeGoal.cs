@@ -58,7 +58,7 @@ public class LineCodeGoal : GoalSO
         }
 
         //CodeException is a class that check whether the given string has a certain text.
-        CodeExcemption codeEx = new CodeExcemption();
+        CodeExemption codeEx = new CodeExemption();
 
         //adding +1 to the starting index to exclude "public void Main()" in the detection
         for (int i = startingIndex + 1; i < codeTexts.Length; i++)
@@ -78,7 +78,7 @@ public class LineCodeGoal : GoalSO
     }
 }
 
-public class CodeExcemption
+public class CodeExemption
 {
     public bool IsBlank(string text) => string.IsNullOrWhiteSpace(text);
     public bool IsComment(string text) => text.Contains("//");

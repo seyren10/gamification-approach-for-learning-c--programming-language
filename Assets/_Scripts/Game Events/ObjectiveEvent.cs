@@ -8,6 +8,7 @@ public static class ObjectiveEvent
 
 
     public static BaseEvent<Collectible> onCollect = new BaseEvent<Collectible>();
+    public static BaseEvent onEnemyKill = new BaseEvent();
 
     public static void Init()
     {
@@ -18,5 +19,6 @@ public static class ObjectiveEvent
 
 
         onCollect = new BaseEvent<Collectible>();
+        onEnemyKill = new BaseEvent();
     }
 }
