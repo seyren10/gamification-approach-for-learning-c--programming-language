@@ -13,6 +13,7 @@ public class ItemSO : ScriptableObject
 public enum ItemType
 {
     Boots,
-    Sickle
+    Sickle,
+    Hero
 
 }

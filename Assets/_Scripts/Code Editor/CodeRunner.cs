@@ -18,8 +18,26 @@ public class CodeRunner : MonoBehaviour
         firstRun = true;
     }
 
+    private void Start()
+    {
+        //EVENT SUBSCRIBE
+        ActionController.Instance.OnQueueFinish += ActionController_OnQueueFinish;
+
+    }
+
+    //EVENT CALL, this is to enable the run button when all the actions are finished performing
+    //this is to prevent unnecessary movement of the player or prevent user from 
+    //clicking the button repeadtedly.
+    public void ActionController_OnQueueFinish(object sender, System.EventArgs e)
+    {
+        btnRunCode.enabled = true;
+    }
+
     private void RunCode()
     {
+        //disable the click button until all the actions are finished playing
+        btnRunCode.enabled = false;
+
         //level must not reset on the first run.
         if (firstRun)
         {

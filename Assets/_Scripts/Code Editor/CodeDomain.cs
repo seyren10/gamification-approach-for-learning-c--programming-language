@@ -55,5 +55,9 @@ public class CodeDomain
     {
         yield return new WaitForSeconds(delay);
         instance.Init();
+
+
+        //do auto movement, IDK what im doing >.<
+        AutoMoveManager.Instance.Move();
     }
 }

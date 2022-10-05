@@ -49,3 +49,6 @@ TagManager:
   - name: Foreground
     uniqueID: 754183827
     locked: 0
+  - name: Tutorial
+    uniqueID: 2784126719
+    locked: 0

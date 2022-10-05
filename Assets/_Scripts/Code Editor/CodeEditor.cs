@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class CodeEditor : MonoBehaviour
 {
     //cached ref
@@ -52,6 +53,8 @@ public class CodeEditor : MonoBehaviour
             //giving the text to evaluate
             LineCodeGoal.Instance.SetCodeText(textEditorWindow.textComponent.text);
         }
+
+      
     }
 
     private string InsertCodeReferences(string code)

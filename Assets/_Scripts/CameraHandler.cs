@@ -33,6 +33,7 @@ public class CameraHandler : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
+          
 
             mouseDifference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             if (!drag)
@@ -65,6 +66,7 @@ public class CameraHandler : MonoBehaviour
     {
         if (drag)
         {
+          
             transform.position = mouseOrigin - mouseDifference;
         }
 
