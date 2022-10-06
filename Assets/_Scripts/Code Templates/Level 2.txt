@@ -1,0 +1,17 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		//this is an example of comment
+        //part of your code
+        //that doesn't execute
+        //in runtime
+
+        //password is:
+        //"Tarlac Agricultural University"
+
+        
+        hero.Say("");
+	}
+}
