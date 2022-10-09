@@ -1,0 +1,605 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2705330398188273933
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1423271834153438140, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_Name
+      value: Dialog Manager 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438141, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[0].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[1].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[2].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 37bff81e4b3b46e43a2f428175ad3f19, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[3].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[0].message
+      value: 'Hello there, welcome to <#FFDF53>C# Adventures</color>. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].avatar
+      value: 
+      objectReference: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[1].message
+      value: You will be learning <#FFDF53>C#</color> today, one of the most popular
+        programming languages widely used worldwide.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[2].message
+      value: But learning C# language is challenging, especially for novice programmers
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[3].message
+      value: "But don\u2019t you worry, I\u2019m here together with my colleague
+        <#FFDF53>Dr. Joven Tolentino</color> (you\u2019ll meet him later), and we
+        will help you learn the basics of C#."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].message
+      value: Ok, now let me introduce myself. Im <#FFDF53>Robo-C#</color> and i will
+        be your instructor for the <#FFDF53>"Mechanics"</color> part of the game.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].message
+      value: I hope you're excited because this will be so much fun! Let's begin,
+        shall we?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].message
+      value: Ok. So let's start with the <#FFDF53>Basic Controls</color>. <#FF7739>Click</color>
+        on the button to display the basic controls of the game.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].message
+      value: That's basically it, pretty easy right?. Now <#FF7739>close</color>
+        the control window.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].message
+      value: Now that you've learned the basic controls, let's move on to the gameplay.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].message
+      value: This is your character, and your goal to help him find his way to the
+        <#FFDF53>blue flag</color> in order to finish the level by writing C# codes
+        in the <#FFDF53>Code Editor</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].message
+      value: Since I mentioned the Code Editor, let us now move to the <#FFDF53>Code
+        Editor</color> Panel.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].message
+      value: This is your code editor. You will write C# codes here to provide the
+        behavior of your character.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].message
+      value: This button will <#FFDF53>Run</color> and <#FFDF53>evaluate</color>
+        your code for any <#FF7739>errors</color>. <#C9EAD7>Dont click it just yet.</color>
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].message
+      value: And things messed up and you want to <#FFDF53>reset</color> your code
+        to its original template, just click here. Again, Dont click it just yet
+        >.<
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].message
+      value: Now the fun part, the <#FFDF53>INVENTORY</color> *clap* *clap* *clap*.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].message
+      value: Now the fun part, the <#FFDF53>INVENTORY</color> *clap* *clap* *clap*.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[0].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[1].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[2].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[3].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].speakerName
+      value: Robo-C#
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].enablePointer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].enablePointer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].enablePointer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].enablePointer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].enablePointer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].enablePointer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].enablePointer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].enablePointer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].tutorialAction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].tutorialAction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].tutorialAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].tutorialAction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].fadePanelSize.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].fadePanelSize.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].fadePanelSize.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].fadePanelSize.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].fadePanelSize.x
+      value: 312.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].fadePanelSize.y
+      value: 79.895
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].fadePanelSize.x
+      value: 1735.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].fadePanelSize.y
+      value: 717.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].fadePanelSize.x
+      value: 1735.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].fadePanelSize.y
+      value: 717.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].fadePanelSize.x
+      value: 194.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].fadePanelSize.y
+      value: 504.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].fadePanelSize.x
+      value: 194.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].fadePanelSize.y
+      value: 504.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].fadePanelSize.x
+      value: 194.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].fadePanelSize.y
+      value: 504.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].fadePanelSize.x
+      value: 493.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].fadePanelSize.y
+      value: 82.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].fadePanelSize.x
+      value: 185.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].fadePanelSize.y
+      value: 82.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].fadePanelSize.x
+      value: 559.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].fadePanelSize.y
+      value: 741.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].fadePanelSize.x
+      value: 559.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].fadePanelSize.y
+      value: 741.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].pointerPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].pointerPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].pointerPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].pointerPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].pointerPosition.x
+      value: -380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].pointerPosition.y
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].pointerPosition.x
+      value: 684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].pointerPosition.y
+      value: 469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].pointerPosition.x
+      value: 684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].pointerPosition.y
+      value: 469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].pointerPosition.x
+      value: 684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].pointerPosition.y
+      value: 469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].pointerPosition.x
+      value: 684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].pointerPosition.y
+      value: 469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].pointerPosition.x
+      value: 684
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].pointerPosition.y
+      value: 469
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].pointerPosition.x
+      value: 308
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].pointerPosition.y
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].pointerPosition.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].pointerPosition.y
+      value: 242
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].pointerPosition.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].pointerPosition.y
+      value: 242
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].pointerPosition.x
+      value: 380
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].pointerPosition.y
+      value: 242
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].fadePanelPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[4].fadePanelPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].fadePanelPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[5].fadePanelPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].fadePanelPosition.x
+      value: -116.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[6].fadePanelPosition.y
+      value: -161.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].fadePanelPosition.x
+      value: -10.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[7].fadePanelPosition.y
+      value: 156.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].fadePanelPosition.x
+      value: -10.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[8].fadePanelPosition.y
+      value: 156.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].fadePanelPosition.x
+      value: -840.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[9].fadePanelPosition.y
+      value: 50.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].fadePanelPosition.x
+      value: -840.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[10].fadePanelPosition.y
+      value: 50.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].fadePanelPosition.x
+      value: -840.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[11].fadePanelPosition.y
+      value: 50.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].fadePanelPosition.x
+      value: 680.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[12].fadePanelPosition.y
+      value: 169.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].fadePanelPosition.x
+      value: 673
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[13].fadePanelPosition.y
+      value: -159.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].fadePanelPosition.x
+      value: 680.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[14].fadePanelPosition.y
+      value: 169.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].fadePanelPosition.x
+      value: 680.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423271834153438142, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}
+      propertyPath: dialogList.Array.data[15].fadePanelPosition.y
+      value: 169.15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 80ad270c6ca7e8547958b301e3ebff94, type: 3}

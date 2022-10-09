@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class TutorialManager : MonoBehaviour
 {
-    [SerializeField] private Tutorial tutorial;
     [SerializeField] private TutorialUI tutorialUI;
     [SerializeField] private bool showOnStart;
     [SerializeField] private DialogManager dialogManager;
@@ -57,6 +56,12 @@ public class TutorialManager : MonoBehaviour
 
         if (dialogIndex < dialogs.Count)
             StartDialog(dialogs[dialogIndex]);
+        else
+        {
+            //end the tutorial
+            Debug.Log("Tutorial Ended");
+        }
+
     }
 
     private void HandleDialogTrigger(Dialog dialog)

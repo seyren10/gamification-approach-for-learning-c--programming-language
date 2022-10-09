@@ -9,17 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: e45387f5ebc663d469a207bcbffba947
   - enabled: 1
-    path: Assets/Scenes/Levels/A Level 1.unity
-    guid: 5eca9b413c9444042834567c166a2203
-  - enabled: 1
-    path: Assets/Scenes/Levels/A Level 2.unity
-    guid: 90fbf4e66615e1a4b860ad1c912d90d6
-  - enabled: 1
-    path: Assets/Scenes/Levels/A Level 3.unity
-    guid: 8419fe261c6d8c045a9159007167bdfc
-  - enabled: 1
-    path: Assets/Scenes/Levels/A Level 4.unity
-    guid: 069580f845a24244ca3565a872a56dfc
+    path: Assets/Scenes/Levels/Basic Printing/T Level 1.unity
+    guid: e6d99cd008fc5e342b71f005befe185c
   - enabled: 1
     path: Assets/Scenes/Code Editor.unity
     guid: a9998434f531c094cb8947310ffbd709

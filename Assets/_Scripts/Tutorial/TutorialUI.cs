@@ -59,9 +59,14 @@ public class TutorialUI : MonoBehaviour
             message.text = dialogMessage;
             skipButton.SetActive(false);
 
-            if (tutorialAction == TutorialAction.Normal)
-                normalButton.SetActive(true);
+
         }
+
+        if (tutorialAction == TutorialAction.Normal)
+        {
+            normalButton.SetActive(true);
+        }
+
 
 
 
@@ -100,9 +105,28 @@ public class TutorialUI : MonoBehaviour
         this.message.text = "";
         isTyping = true;
         skipButton.SetActive(true);
+
+        var tag = "";
+        var openTag = false;
         foreach (char letter in message)
         {
-            this.message.text += letter;
+            if (IsTag(letter))
+            {
+                openTag = !openTag;
+                tag += letter;
+                continue;
+            }
+            else if (openTag)
+            {
+                tag += letter;
+                continue;
+            }
+
+
+
+
+            this.message.text += tag + letter;
+            tag = "";
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -111,6 +135,11 @@ public class TutorialUI : MonoBehaviour
 
         if (tutorialAction == TutorialAction.Normal)
             normalButton.SetActive(true);
+    }
+
+    private bool IsTag(char letter)
+    {
+        return letter == '<' || letter == '>';
     }
 
 
