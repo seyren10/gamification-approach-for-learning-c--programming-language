@@ -9,6 +9,8 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private bool showOnStart;
     [SerializeField] private DialogManager dialogManager;
 
+    [SerializeField] private GameObject tutorialParent;
+
     private List<Dialog> dialogs;
     private int dialogIndex;
 
@@ -59,7 +61,7 @@ public class TutorialManager : MonoBehaviour
         else
         {
             //end the tutorial
-            Debug.Log("Tutorial Ended");
+            EndTutorial();
         }
 
     }
@@ -93,6 +95,26 @@ public class TutorialManager : MonoBehaviour
 
         SetUpUI(dialog);
         tutorialUI.DisplayDialog(dialog);
+    }
+
+    public void EndTutorial()
+    {
+        dialogIndex = 0;
+        RemoveAllTutorialButton();
+        tutorialParent.SetActive(false);
+    }
+
+    private void RemoveAllTutorialButton()
+    {
+        var buttonTriggers = Resources.FindObjectsOfTypeAll<ButtonTrigger>();
+
+        foreach (var bTrigger in buttonTriggers)
+        {
+            if (!UnityEditor.EditorUtility.IsPersistent(bTrigger))
+            {
+                Destroy(bTrigger);
+            }
+        }
     }
 
 

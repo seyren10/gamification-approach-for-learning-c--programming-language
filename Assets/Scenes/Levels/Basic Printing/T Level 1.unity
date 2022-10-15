@@ -1313,18 +1313,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081bdb0f325f1c34e9c740202a2a80da, type: 3}
---- !u!1 &1597818190 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1392966061666588428, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
+--- !u!114 &1597818195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1597818195, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
   m_PrefabInstance: {fileID: 1667275153}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1597818195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597818190}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85216045f2ce2794e94acb2d2694a723, type: 3}
@@ -1561,10 +1555,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1392966061666588428, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
-      propertyPath: m_Name
-      value: btnControlClose
-      objectReference: {fileID: 0}
     - target: {fileID: 1392966061783453706, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1620,10 +1610,6 @@ PrefabInstance:
     - target: {fileID: 1392966062520199337, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1392966062554586762, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 117
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe1e146316774a74f97abc798ec9bb2b, type: 3}
@@ -1725,33 +1711,6 @@ PrefabInstance:
       value: Dialog Manager 1
       objectReference: {fileID: 0}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.size
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].avatar
-      value: 
-      objectReference: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].avatar
-      value: 
-      objectReference: {fileID: 21300000, guid: 37bff81e4b3b46e43a2f428175ad3f19, type: 3}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[10].message
-      value: Since I mentioned the Code Editor, let us now move on to the <#FFDF53>Code
-        Editor</color> Panel.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].message
-      value: When things messed up and you want to <#FFDF53>reset</color> your code
-        to its original template, just click here. <#C9EAD7>Again, Dont click it
-        just yet :)</color>
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].enablePointer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
       propertyPath: dialogList.Array.data[0].continueTrigger
       value: 
       objectReference: {fileID: 1278947355}
@@ -1800,37 +1759,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].fadePanelSize.x
-      value: 533.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].fadePanelSize.y
-      value: 662.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
       propertyPath: dialogList.Array.data[12].continueTrigger
       value: 
       objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].fadePanelSize.x
-      value: 173.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].fadePanelSize.y
-      value: 77.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
       propertyPath: dialogList.Array.data[13].continueTrigger
       value: 
       objectReference: {fileID: 1278947355}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].fadePanelSize.x
-      value: 173.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].fadePanelSize.y
-      value: 77.32
-      objectReference: {fileID: 0}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
       propertyPath: dialogList.Array.data[14].continueTrigger
       value: 
@@ -1840,53 +1775,53 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].pointerPosition.x
-      value: 364
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[16].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].pointerPosition.y
-      value: 251
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[17].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].pointerPosition.x
-      value: 314
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[18].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].pointerPosition.y
-      value: -165
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[19].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].pointerPosition.x
-      value: 487
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[20].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].pointerPosition.y
-      value: -165
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[21].continueTrigger
+      value: 
+      objectReference: {fileID: 7169482917802271911}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].fadePanelPosition.x
-      value: 677.62
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[22].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[11].fadePanelPosition.y
-      value: 130.1
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[23].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].fadePanelPosition.x
-      value: 497.29
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[24].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[12].fadePanelPosition.y
-      value: -162.7
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[25].continueTrigger
+      value: 
+      objectReference: {fileID: 7631981869276736517}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].fadePanelPosition.x
-      value: 672
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[26].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     - target: {fileID: 3912284029883042483, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
-      propertyPath: dialogList.Array.data[13].fadePanelPosition.y
-      value: -162.7
-      objectReference: {fileID: 0}
+      propertyPath: dialogList.Array.data[27].continueTrigger
+      value: 
+      objectReference: {fileID: 1278947355}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31eeaf2ee4f40064396eae9f04389490, type: 3}
 --- !u!1 &1965706078 stripped
@@ -2103,6 +2038,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2140838875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6356085251066557965, guid: bf8fc46c2b009fd4a8d9b3c6cb4c1ee9, type: 3}
+  m_PrefabInstance: {fileID: 6356085251455775083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0dc32f2d0d11a84581f91a1c5ffd1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &17155649591714643
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,7 +3349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec4c0dd6be4fe040aec6b3fdbd5c8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeTemplate: {fileID: 4900000, guid: 5932f479d58ea794ea5dee47348ad780, type: 3}
+  codeTemplate: {fileID: 4900000, guid: 69b807a098bb6cd4fac471d225a95543, type: 3}
   textEditorWindow: {fileID: 1643550209194371576}
   codeReferences: "Boots boots = Boots.Instance;\nSickle sickle = Sickle.Instance;\nHero
     hero = Hero.Instance;\nActionController actionController = ActionController.Instance;\n\tpublic
@@ -3992,18 +3938,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.43508, y: -16.869987}
   m_SizeDelta: {x: 305.29, y: 86.18}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2417875833514354091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4797687076300494187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa1971be8a1403c4eaa3de73bc90be59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2458259711529822347
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6696,7 +6630,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1643550209900132916}
         m_TargetAssemblyTypeName: CodeEditor, Assembly-CSharp
-        m_MethodName: RunCode
+        m_MethodName: ResetCode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7056,7 +6990,6 @@ GameObject:
   - component: {fileID: 5347481435734787573}
   - component: {fileID: 7631150436816484373}
   - component: {fileID: 3637483560774448332}
-  - component: {fileID: 2417875833514354091}
   - component: {fileID: 1618976314}
   m_Layer: 5
   m_Name: btnResetCode
@@ -7186,14 +7119,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 979915213}
     m_Modifications:
+    - target: {fileID: 1732707701269810189, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776393430125058123, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2140838875}
+    - target: {fileID: 4776393430125058123, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndTutorial
+      objectReference: {fileID: 0}
     - target: {fileID: 5192365607763565670, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 367109823}
-    - target: {fileID: 5192365607763565670, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5192365607763565690, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
       propertyPath: m_Name
       value: Tutorial Buttons
@@ -7286,9 +7227,41 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 689927117}
-    - target: {fileID: 5192365609696122784, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+    - target: {fileID: 5460172577732698941, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337517576539351684, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -154.70001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337517576539351684, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -56.200012
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788340532029932566, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788340532029932566, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788340532029932566, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788340532029932566, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055112939435895975, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055112939435895975, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a71ab7c12b743846b80287eaa3d26f8, type: 3}
@@ -8135,6 +8108,10 @@ PrefabInstance:
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 940169792}
+    - target: {fileID: 6356085251066557965, guid: bf8fc46c2b009fd4a8d9b3c6cb4c1ee9, type: 3}
+      propertyPath: tutorialParent
+      value: 
+      objectReference: {fileID: 979915212}
     - target: {fileID: 6356085251066557966, guid: bf8fc46c2b009fd4a8d9b3c6cb4c1ee9, type: 3}
       propertyPath: m_Name
       value: Tutorial Manager
@@ -8195,9 +8172,9 @@ RectTransform:
   m_Father: {fileID: 2937697896625274862}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 98.1, y: -25}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6519348853971710739
@@ -8600,30 +8577,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 979915213}
     m_Modifications:
-    - target: {fileID: 7366549847543044245, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 314
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366549847543044245, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -165
-      objectReference: {fileID: 0}
+    - target: {fileID: 980272485, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2140838875}
     - target: {fileID: 7366549847771626608, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
       propertyPath: m_Name
       value: Tutorial Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366549847771626608, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7366549847771626611, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 367109823}
-    - target: {fileID: 7366549847771626611, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7366549847771626612, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -8716,22 +8681,6 @@ PrefabInstance:
       propertyPath: normalButton
       value: 
       objectReference: {fileID: 1278947350}
-    - target: {fileID: 7366549847885404218, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 173.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366549847885404218, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 77.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366549847885404218, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 672
-      objectReference: {fileID: 0}
-    - target: {fileID: 7366549847885404218, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -162.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b35bb660f5a4241979a113b3215837, type: 3}
 --- !u!222 &7458801660931493182

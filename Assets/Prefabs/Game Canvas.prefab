@@ -720,9 +720,9 @@ RectTransform:
   m_Father: {fileID: 2937697897936292515}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 98.1, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3397845162136097542
@@ -3737,7 +3737,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 5
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -4582,10 +4582,10 @@ RectTransform:
   m_Father: {fileID: 3290519621656019413}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 420.43, y: 0.0000050068}
-  m_SizeDelta: {x: 634.85, y: 67.2}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -19.83, y: 0}
+  m_SizeDelta: {x: 674.51, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3290519621334256911
 CanvasRenderer:
@@ -4615,7 +4615,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect 3 apples.
+  m_text: jqkwjrlqjwrlkqjwrljqwlkrjqwlkrjqwlkrjqwlkrjqlwkrjqlkwrjqlkwrjqlkwrjqlkwrjlqwkjrlkqwjrlkqjwlrk
+    jqwl krjq lwjr lqkwj rlqkw jrlqwj rlqkw jrlqwj rlkqwj rlkqw jrlkqwj rlkqwj rlkwqjrlkqw
+    jrlqkw jrlkqw jrlkqw jrlkq wjrlk qwjrl kqwj rlkwqj rlkjqw lrkjwql rkjqw lkrjqwl
+    krjqw lkrjqw kjl kqwjlr kjqw klrjqwlk rjlqwk jrlqk wjrl kqjwrlk jqwlk rjlqk wjrlkqwjrlk
+    jqwlkrjlk qjwrlk jqwl krjlqkw jrlkqwj rlkqjw lrkjqwlk rjlqkwj rlkjqw ljqkw lrjlkqwj
+    rl
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e6898949e904b3a46b9ccf46a792ae6e, type: 2}
   m_sharedMaterial: {fileID: 1618136868628389169, guid: e6898949e904b3a46b9ccf46a792ae6e, type: 2}
@@ -4642,7 +4647,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55.5
+  m_fontSize: 18
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4932,10 +4937,10 @@ RectTransform:
   m_Father: {fileID: 3290519620630105011}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 67.2}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 449.60004, y: -80.06}
+  m_SizeDelta: {x: 899.2001, y: 160.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3643173409249868675
 CanvasRenderer:
@@ -5588,7 +5593,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.401001, y: 0.0009765625}
+  m_AnchoredPosition: {x: 4.401001, y: 0.00012207031}
   m_SizeDelta: {x: -23.471, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &5275107750224769352
@@ -5643,7 +5648,6 @@ GameObject:
   - component: {fileID: 5347481436705435832}
   - component: {fileID: 7631150437926047064}
   - component: {fileID: 3637483561682846081}
-  - component: {fileID: 2417875834623398118}
   m_Layer: 5
   m_Name: btnResetCode
   m_TagString: Untagged
@@ -5756,7 +5760,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1643550210740768633}
         m_TargetAssemblyTypeName: CodeEditor, Assembly-CSharp
-        m_MethodName: RunCode
+        m_MethodName: ResetCode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5766,18 +5770,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2417875834623398118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4797687077409579046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa1971be8a1403c4eaa3de73bc90be59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5751596294590164396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,7 +7398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 19.100006, y: -20.135}
+  m_AnchoredPosition: {x: 19.100006, y: -20.135002}
   m_SizeDelta: {x: 28.381, y: 40.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5845212104679436292

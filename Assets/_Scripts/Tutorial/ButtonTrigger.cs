@@ -16,4 +16,9 @@ public class ButtonTrigger : MonoBehaviour
     {
         return button;
     }
+
+    private void OnDestroy()
+    {
+        button.enabled = true;
+    }
 }

@@ -15,9 +15,7 @@ MonoBehaviour:
   description: 'Your First Program!
 
     Greet the villager by typing <#7BD498>"Hello
-    World"</color> in the <#2c3e50>hero.Say()</color> method.
-
-'
+    World"</color> in the <#2c3e50>hero.Say()</color> method. '
   requiredAmount: 1
   sentence: hello world
   caseSensitive: 0
