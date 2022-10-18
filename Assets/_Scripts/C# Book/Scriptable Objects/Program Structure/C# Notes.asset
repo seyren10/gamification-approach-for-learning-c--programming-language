@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: C# Notes
+  m_EditorClassIdentifier: 
+  title: Important C# Notes
+  textDataArray:
+  - 'C# is <#F2B84B>case sensitive</color>.
+
+
+
+    All statements and expression
+    must end with a semicolon (<#F2B84B>;</color>).
+
+
+
+    The program execution
+    starts at the <#F2B84B>Main</color> method.
+
+
+
+    Unlike Java, program file
+    name could be different from the class name.'
+  - '<#D95E32>Source: https://www.tutorialspoint.com/csharp/csharp_program_structure.htm</color>'

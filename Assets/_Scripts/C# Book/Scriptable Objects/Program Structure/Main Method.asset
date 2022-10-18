@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Main Method
+  m_EditorClassIdentifier: 
+  title: Main Method
+  textDataArray:
+  - The <#F2B84B>Main</color> method, which is the <#F2B84B>entry point</color> for
+    all C# programs. The Main method states what the class does when executed.
+  - "Example:\n\nstatic void Main(string[] args) \n{\r\n       \n}"
+  - '<#D95E32>Source: https://www.tutorialspoint.com/csharp/csharp_program_structure.htm</color>'

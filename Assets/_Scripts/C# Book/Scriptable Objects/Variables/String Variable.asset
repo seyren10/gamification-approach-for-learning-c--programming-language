@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: String Variable
+  m_EditorClassIdentifier: 
+  title: String Variable
+  textDataArray:
+  - 'To create a variable that should store text, look at the following example:
+
+
+    <size=45>Example</size>
+
+    Create
+    a variable called <color=black>name</color> of type <#538C51>string</color> and
+    assign it the value "<b><color=black>John</color></b>":
+
+
+    <color=black>C#
+    Equiavalent:</color>
+
+    <i>string name = "John";
+
+    Console.WriteLine(name);</i>
+
+
+    <color=black>C#
+    Adventures Equivalent:</color>
+
+    <i>string name = "John";
+
+    hero.Say(name);</i>'

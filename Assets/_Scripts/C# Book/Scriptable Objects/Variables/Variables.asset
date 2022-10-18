@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a58194c0b71b2904f89d7eef4683cb0f, type: 3}
+  m_Name: Variables
+  m_EditorClassIdentifier: 
+  title: Variables
+  cSharpSubTopics:
+  - {fileID: 11400000, guid: 2cfda7e216ab98b48abc43ddab8759d6, type: 2}
+  - {fileID: 11400000, guid: 04d2467864378c642bfc29e292014079, type: 2}
+  - {fileID: 11400000, guid: 08a3e20a36e809948a3a56c44b9d28a2, type: 2}
+  - {fileID: 11400000, guid: 3f4c7315a406bb24bb6d9eecf470f649, type: 2}
+  - {fileID: 11400000, guid: 085a7c1b436176043ad47d8031fc6161, type: 2}
