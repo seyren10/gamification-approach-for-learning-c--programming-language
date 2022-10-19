@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Assignment
+  m_EditorClassIdentifier: 
+  title: Assignment Operators
+  textDataArray:
+  - "<size=45>Assignment Operators</size>\r\nAssignment operators are used to assign
+    values to variables.\r\n\r\nIn the example below, we use the <color=black>assignment</color>
+    operator (<#F2B84B>=</color>) to assign the value <color=black>10</color> to
+    a variable called <color=black>x</color>:\n\n<size=45>Example</size>\r\nint x
+    = 10;\n\nThe <color=black>addition assignment</color> operator (<#F2B84B>+=</color>)
+    adds a value to a variable:\n\n<size=45>Example\r</size>\nint x = 10;\r\nx +=
+    5;"
+  - 'A list of common assignment operators:
+
+
+    Operator: <#F2B84B>=</color>
+
+    Example:
+    <#F2B84B>x = 5</color>
+
+    Same As: <#F2B84B>x=5</color>
+
+
+    Operator: <#F2B84B>+=</color>
+
+    Example:
+    <#F2B84B>x += 3</color>
+
+    Same As: <#F2B84B>x= x+3</color>
+
+
+    Operator:
+    <#F2B84B>-=</color>
+
+    Example: <#F2B84B>x -= 5</color>
+
+    Same As: <#F2B84B>x
+    = x-5</color>
+
+    
+
+'
+  - 'Operator: <#F2B84B>*=</color>
+
+    Example: <#F2B84B>x *= 5</color>
+
+    Same
+    As: <#F2B84B>x= x*5</color>
+
+
+    Operator: <#F2B84B>/=</color>
+
+    Example:
+    <#F2B84B>x /= 5</color>
+
+    Same As: <#F2B84B>x=x/5</color>'

@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Arithmetic
+  m_EditorClassIdentifier: 
+  title: Arithmetic Operators
+  textDataArray:
+  - "<size=45>Arithmetic Operators\r</size>\nArithmetic operators are used to perform
+    common mathematical operations:\n\nOperator: <#F2B84B>+</color>\nName: <#F2B84B>Addition</color>\nDesciption:
+    <#F2B84B>Adds together two values</color>\nExample: <#F2B84B>x+y</color>\n"
+  - 'Operator: <#F2B84B>-</color>
+
+    Name: <#F2B84B>Subtraction</color>
+
+    Desciption:
+    <#F2B84B>Subtracts one value from another</color>
+
+    Example: <#F2B84B>x-y</color>
+
+
+    Operator:
+    <#F2B84B>*</color>
+
+    Name: <#F2B84B>Multiplication</color>
+
+    Desciption:
+    <#F2B84B>Multiplies two values</color>
+
+    Example: <#F2B84B>x*y</color>'
+  - 'Operator: <#F2B84B>/</color>
+
+    Name: <#F2B84B>Division</color>
+
+    Desciption:
+    <#F2B84B>Divides one value by the other</color>
+
+    Example: <#F2B84B>x/y</color>
+
+
+    Operator:
+    <#F2B84B>%</color>
+
+    Name: <#F2B84B>Modulus</color>
+
+    Desciption: <#F2B84B>Returns
+    the division remainder</color>
+
+    Example: <#F2B84B>x%y</color>'
+  - 'Operator: <#F2B84B>++</color>
+
+    Name: <#F2B84B>Increment</color>
+
+    Desciption:
+    <#F2B84B>Increases the value of a variable by 1</color>
+
+    Example: <#F2B84B>x++</color>
+
+
+    Operator:
+    <#F2B84B>--</color>
+
+    Name: <#F2B84B>Decrement</color>
+
+    Desciption: <#F2B84B>Decreases
+    the value of a variable by 1</color>
+
+    Example: <#F2B84B>x--</color>'

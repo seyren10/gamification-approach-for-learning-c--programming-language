@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  title: Introduction
+  textDataArray:
+  - '<size=45>Operators</size>
+
+    Operators are used to perform operations on
+    variables and values.
+
+    
+
+    In the example below, we use the <#D95E32>+</color>
+    <color=black>operator</color> to add together two values:
+
+
+    <size=45>Example</size>
+
+    <#AFBF73>int</color>
+    x = <#F2B84B>100 + 50</color>;'
+  - "Although the <#D95E32>+</color> operator is often used to add together two values,
+    like in the previous example, it can also be used to add together a variable
+    and a value, or a variable and another variable:\n\n<size=45>Example</size>\r\n<#AFBF73>int</color>
+    sum1 = 100 + 50;        <#538C51>// 150 (100 + 50)\r</color>\n<#AFBF73>int</color>
+    sum2 = sum1 + 250;      <#538C51>// 400 (150 + 250)</color>\r\n<#AFBF73>int</color>
+    sum3 = sum2 + sum2;     <#538C51>// 800 (400 + 400)</color>"

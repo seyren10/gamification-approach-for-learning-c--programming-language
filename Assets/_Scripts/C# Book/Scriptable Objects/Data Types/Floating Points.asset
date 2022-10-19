@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Floating Points
+  m_EditorClassIdentifier: 
+  title: Floating Points Types
+  textDataArray:
+  - "<size=45>Floating Point Types\r</size>\nYou should use a floating point type
+    whenever you need a number with a decimal, such as 9.99 or 3.14515.\r\n\r\nThe
+    <#AFBF73>float</color> and <#AFBF73>double</color> data types can store fractional
+    numbers. Note that you should end the value with an <color=black>\"F\"</color>
+    for floats and <color=black>\"D\"</color> for doubles:\n\n"
+  - "<size=45>Float Example\r</size>\n\n<color=black>C# Equivalent:</color>\n<i>float
+    myNum = 5.75F;\r\nConsole.WriteLine(myNum);</i>\n\n<color=black>C# Adventures
+    Equivalent:</color>\n<i>float myNum = 5.75F;\r\nhero.Say(myNum);</i>"
+  - "<size=45>Double Example\r</size>\n\n<color=black>C# Equivalent:</color>\n<i>double
+    myNum = 5.75D;\r\nConsole.WriteLine(myNum);</i>\n\n<color=black>C# Adventures
+    Equivalent:</color>\n<i>double myNum = 5.75D;\r\nhero.Say(myNum);</i>"

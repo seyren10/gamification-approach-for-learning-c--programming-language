@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Else
+  m_EditorClassIdentifier: 
+  title: Else Statement
+  textDataArray:
+  - "<size=45>The else Statement\r\n</size>\r\nUse the <#F2B84B>else</color> statement
+    to specify a block of code to be executed if the condition is <#F2B84B>False</color>.\r\n\r\n<size=45>Syntax</size>\r\n<#F2B84B>if</color>
+    (condition)\r\n<#538C51>{\r\n  // block of code to be executed if the condition
+    is True\r\n} \r\n</color>\r\n<#F2B84B>else</color> \r\n<#538C51>{\r\n  // block
+    of code to be executed if the condition is False\r\n}</color>"
+  - "<size=45>Example\r</size>\n\n<color=black>C# Equivalent:</color>\nint time =
+    20;\r\nif (time < 18) \r\n{\r\n  Console.WriteLine(\"Good day.\");\r\n} \r\nelse
+    \r\n{\r\n  Console.WriteLine(\"Good evening.\");\r\n}\r\n// Outputs \"Good evening.\""
+  - "<color=black>C# Adventures Equivalent:</color>\nint time = 20;\r\nif (time <
+    18) \r\n{\r\n  hero.Say(\"Good day.\");\r\n} \r\nelse \r\n{\r\n  hero.Say(\"Good
+    evening.\");\r\n}\r\n// Outputs \"Good evening.\""
+  - 'Example explained
+
+    In the previous example, time (20) is greater than 18,
+    so the condition is  <#F2B84B>False</color>. Because of this, we move on to the 
+    <#F2B84B>else</color> condition and print to the screen "Good evening". If the
+    time was less than 18, the program would print "Good day".'

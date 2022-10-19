@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
   m_Name: C# Notes
   m_EditorClassIdentifier: 
-  title: Important C# Notes
+  title: C# Key Notes
   textDataArray:
   - 'C# is <#F2B84B>case sensitive</color>.
 
@@ -20,6 +20,10 @@ MonoBehaviour:
 
     All statements and expression
     must end with a semicolon (<#F2B84B>;</color>).
+
+
+    The curly braces <#F2B84B>{}</color>
+    marks the beginning and the end of a block of code.
 
 
 

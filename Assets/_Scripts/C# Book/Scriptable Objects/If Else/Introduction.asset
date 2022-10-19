@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  title: Conditions and If Statements
+  textDataArray:
+  - "C# supports the usual logical conditions from mathematics:\r\n\r\n\t\u2022Less
+    than: <#F2B84B>a < b</color>\r\n\t\u2022Less than or equal to: <#F2B84B>a <=
+    b\r</color>\n\t\u2022Greater than: <#F2B84B>a > b\r</color>\n\t\u2022Greater
+    than or equal to: <#F2B84B>a >= b\r</color>\n\t\u2022Equal to <#F2B84B>a == b\r</color>\n\t\u2022Not
+    Equal to: <#F2B84B>a != b</color>\r"
+  - "You can use these conditions to perform different actions for different decisions.\r\n\r\nC#
+    has the following conditional statements:\r\n\r\n\t\u2022Use <#F2B84B>if</color>
+    to specify a block of code to be executed, if a specified condition is true\r\n\t\u2022Use
+    <#F2B84B>else</color> to specify a block of code to be executed, if the same
+    condition is false\r\n\t\u2022Use <#F2B84B>else if</color> to specify a new condition
+    to test, if the first condition is false\r"

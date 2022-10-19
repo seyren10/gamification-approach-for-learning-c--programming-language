@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Introduction
+  m_EditorClassIdentifier: 
+  title: Introduction
+  textDataArray:
+  - "<size=45>C# Data Types\r</size>\nAs explained in the variables chapter, a variable
+    in C# must be a specified data type:\n\n<size=45>Example</size>\r\n<#538C51>int</color>
+    myNum = <#F2B84B>5</color>; <#D95E32>// Integer (whole number)</color>\n<#538C51>double</color>
+    myDoubleNum = <#F2B84B>5.99D</color>; <#D95E32>// Floating point number</color>\n<#538C51>char</color>
+    myLetter = <#F2B84B>'D'</color>;  <#D95E32>// Character</color>\n<#538C51>bool</color>
+    myBool = <#F2B84B>true</color>;  <#D95E32>// Boolean</color>\n<#538C51>string</color>
+    myText = <#F2B84B>\"Hello\"</color>; <#D95E32>// String </color>\n"
+  - 'A data type specifies the size and type of variable values.
+
+    
+
+    It
+    is important to use the correct data type for the corresponding variable; to
+    avoid errors, to save time and memory, but it will also make your code more maintainable
+    and readable. The most common data types are:
+
+
+    <#F2B84B>Data Type</color>:
+    int
+
+    <#F2B84B>Size: </color> 4 bytes
+
+    <#F2B84B>Description:</color> Stores
+    whole numbers from -2,147,483,648 to 2,147,483,647'
+  - '<#F2B84B>Data Type</color>: double
+
+    <#F2B84B>Size: </color> 8 bytes
+
+    <#F2B84B>Description:</color>
+    Stores fractional numbers. Sufficient for storing 15 decimal digits'
+  - '<#F2B84B>Data Type</color>: string
+
+    <#F2B84B>Size: </color> 2 bytes per
+    character
+
+    <#F2B84B>Description:</color> Stores a sequence of characters,
+    surrounded by double quotes'

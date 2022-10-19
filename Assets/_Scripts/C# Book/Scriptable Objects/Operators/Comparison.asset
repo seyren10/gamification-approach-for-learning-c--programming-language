@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Comparison
+  m_EditorClassIdentifier: 
+  title: Comparison Operators
+  textDataArray:
+  - "<size=45>Comparison Operators\r</size>\nComparison operators are used to compare
+    two values:\r\n\r\n<color=black>Note:</color> The return value of a comparison
+    is either <#F2B84B>True</color> or <#F2B84B>False</color>.\r\n\r\nIn the following
+    example, we use the <color=black>greater than operator</color> (<#F2B84B>></color>)
+    to find out if 5 is greater than 3:"
+  - '<size=45>Example</size>
+
+
+    <color=black>C# Equivalent:</color>
+
+    <i>int
+    x = 5;
+
+    int y = 3;
+
+    Console.WriteLine(x > y); <#538C51>// returns True
+    because 5 is greater than 3</color><i>
+
+
+    <color=black>C# Adventures Equivalent:</color>
+
+    <i>int
+    x = 5;
+
+    int y = 3;
+
+    hero.Say(x > y); <#538C51>// returns True because
+    5 is greater than 3</color><i>'
+  - 'A list of all comparison operators:
+
+
+    Operator: <#F2B84B>==</color>
+
+    Name:
+    <#F2B84B>Equal To</color>
+
+    Example: <#F2B84B>x==y</color>
+
+
+    Operator:
+    <#F2B84B>!=</color>
+
+    Name: <#F2B84B>Not Equal To</color>
+
+    Example: <#F2B84B>x
+    != y</color>'
+  - 'Operator: <#F2B84B>></color>
+
+    Name: <#F2B84B>Greater Than</color>
+
+    Example:
+    <#F2B84B>x>y</color>
+
+
+    Operator: <#F2B84B><</color>
+
+    Name: <#F2B84B>Less
+    Than</color>
+
+    Example: <#F2B84B>x < y</color>'
+  - 'Operator: <#F2B84B>>=</color>
+
+    Name: <#F2B84B>Greater Than or Equal To</color>
+
+    Example:
+    <#F2B84B>x >= y</color>
+
+
+    Operator: <#F2B84B><=</color>
+
+    Name: <#F2B84B>Less
+    Than or Equal To</color>
+
+    Example: <#F2B84B>x <= y</color>'

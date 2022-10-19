@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: If
+  m_EditorClassIdentifier: 
+  title: If Statement
+  textDataArray:
+  - "<size=45>The if Statement\r</size>\n\nUse the <#F2B84B>if</color> statement
+    to specify a block of C# code to be executed if a condition is <#F2B84B>True</color>.\r\n\r\n<color=black>Syntax\r\n</color>\r\n<#F2B84B>if</color>
+    (condition) \r\n<#538C51>{\r\n  // block of code to be executed if the condition
+    is True\r\n}</color>\r\n\r\n</color=black><i>Note that if is in lowercase letters.
+    Uppercase letters (If or IF) will generate an error.<i></color>"
+  - "In the example below, we test two values to find out if 20 is greater than 18.
+    If the condition is <#F2B84B>True</color>, print some text:\n\n<size=45>Example\r</size>\n<i>if
+    (20 > 18) \r\n{\r\n  Console.WriteLine(\"20 is greater than 18\");\r\n}</i>\n\nWe
+    can also test variables:\n\n<size=45>Example</size>\r\n<i>int x = 20;\r\nint
+    y = 18;\r\nif (x > y) \r\n{\r\n  Console.WriteLine(\"x is greater than y\");\r\n}\n</i>"
+  - 'Example explained
+
+    The previous Example we use two variables, <color=black>x</color>
+    and <color=black>y</color>, to test whether x is greater than y (using the <#F2B84B>></color>
+    operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we
+    print to the screen that "x is greater than y".'
