@@ -349,7 +349,7 @@ namespace RoslynCSharp
             settings = Resources.Load<RoslynCSharp>(settingsName);
 
             // Check for error
-            if(settings == null)
+            if (settings == null)
             {
                 settings = CreateInstance<RoslynCSharp>();
                 Debug.LogWarningFormat("Failed to load settings asset '{0}' from resources. Default values will be used", settingsName);
@@ -383,9 +383,9 @@ namespace RoslynCSharp
         /// <param name="args">The string format arguments</param>
         public static void LogWarning(string format, params object[] args)
         {
-            if(settings.LogLevel >= LogDetail.Warnings)
+            if (settings.LogLevel >= LogDetail.Warnings)
             {
-                if(args.Length == 0)
+                if (args.Length == 0)
                 {
                     Debug.LogWarning(format);
                 }
@@ -403,9 +403,9 @@ namespace RoslynCSharp
         /// <param name="args">The string format arguments</param>
         public static void LogError(string format, params object[] args)
         {
-            if(settings.LogLevel >= LogDetail.Errors)
+            if (settings.LogLevel >= LogDetail.Errors)
             {
-                if(args.Length == 0)
+                if (args.Length == 0)
                 {
                     Debug.LogError(format);
                 }
@@ -427,7 +427,7 @@ namespace RoslynCSharp
             // Try to find the asset
             string[] guids = AssetDatabase.FindAssets("t:" + typeof(RoslynCSharp).Name);
 
-            if(guids.Length == 0)
+            if (guids.Length == 0)
             {
                 Debug.LogWarningFormat("Failed to load settings asset '{0}'", typeof(RoslynCSharp));
                 return null;
@@ -465,7 +465,7 @@ namespace RoslynCSharp
             if (AssetDatabase.Contains(settings) == false)
             {
                 // Create the folder first
-                if(AssetDatabase.IsValidFolder("Assets/Resources") == false)
+                if (AssetDatabase.IsValidFolder("Assets/Resources") == false)
                     AssetDatabase.CreateFolder("Assets", "Resources");
 
                 // Create the asset

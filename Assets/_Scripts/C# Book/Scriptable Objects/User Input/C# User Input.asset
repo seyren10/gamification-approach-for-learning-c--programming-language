@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: C# User Input
+  m_EditorClassIdentifier: 
+  title: C#
+  textDataArray:
+  - '<#D95E32>VERY IMPORTANT NOTE: The methods that are shown here do not apply the
+    in-game code editor. We''ve included this to give the main idea of user input
+    in C# terms. To apply this same concept in-game, go to C# Adventures menu instead.</color>'
+  - '<size=45>Get User Input</size>
+
+    You have already learned that <#F2B84B>Console.WriteLine()</color>
+    is used to output (print) values. Now we will use <#F2B84B>Console.ReadLine()</color>
+    to get user input.
+
+
+
+    In the following example, the user can input his or
+    hers username, which is stored in the variable <#F2B84B>userName</color>. Then
+    we print the value of <#F2B84B>userName<#F2B84B>:'
+  - "<size=45>Example</size>\r\n<#538C51>// Type your username and press enter</color>\r\nConsole.WriteLine(\"Enter
+    username:\");\r\n\r\n<#538C51>// Create a string variable and get user input
+    from the keyboard and store it in the variable\r</color>\nstring userName = Console.ReadLine();\r\n\r\n<#538C51>//
+    Print the value of the variable (userName), which will display the input value\r</color>\nConsole.WriteLine(\"Username
+    is: \" + userName);"

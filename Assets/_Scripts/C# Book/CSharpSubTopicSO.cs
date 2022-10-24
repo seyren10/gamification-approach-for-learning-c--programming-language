@@ -6,5 +6,7 @@ using UnityEngine;
 public class CSharpSubTopicSO : ScriptableObject
 {
     public string title;
-    [TextArea(5, 10)] public string[] textDataArray;
+
+    [TextArea(20, 50)]
+    public string[] textDataArray;
 }

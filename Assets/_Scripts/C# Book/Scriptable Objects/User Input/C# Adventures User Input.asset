@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: C# Adventures User Input
+  m_EditorClassIdentifier: 
+  title: C# Adventures
+  textDataArray:
+  - '<size=45>Get User Input</size>
+
+    You have already learned that <#F2B84B>hero.Say()</color>
+    is used to output (print) values. Now we will use <#F2B84B>hero.ReadString(),
+    hero.ReadInt(), hero.ReadDouble() </color> to get user input.
+
+
+
+    The following
+    examples apply the three input methods for string, int, and double data types:'
+  - "<size=45>String Example</size>\r\n<#538C51>// Type your username and press enter</color>\r\nhero.Say(\"Enter
+    username:\");\r\n\r\n<#538C51>// Create a string variable and get user input
+    from the keyboard and store it in the variable\r</color>\nstring userName = hero.ReadString();\r\n\r\n<#538C51>//
+    Print the value of the variable (userName), which will display the input value\r</color>\nhero.Say(\"Username
+    is: \" + userName);"
+  - "<size=45>Int Example</size>\r\n<#538C51>// Type your age and press enter</color>\r\nhero.Say(\"Enter
+    age:\");\r\n\r\n<#538C51>// Create a int variable and get user input from the
+    keyboard and store it in the variable\r</color>\nint age = hero.ReadInt();\r\n\r\n<#538C51>//
+    Print the value of the variable (age), which will display the input value\r</color>\nhero.Say(\"Your
+    Age is: \" + age);"
+  - "<size=45>Double Example</size>\r\n<#538C51>// Type your height in centimeter
+    and press enter</color>\r\nhero.Say(\"Enter height:\");\r\n\r\n<#538C51>// Create
+    a double variable and get user input from the keyboard and store it in the variable\r</color>\ndouble
+    height= hero.ReadDouble();\r\n\r\n<#538C51>// Print the value of the variable
+    (height), which will display the input value\r</color>\nhero.Say(\"Your Height
+    in centimeter is: \" + height);"
+  - "<size=45>Double Example</size>\r\n<#538C51>// Type your height in centimeter
+    and press enter</color>\r\nhero.Say(\"Enter height:\");\r\n\r\n<#538C51>// Create
+    a double variable and get user input from the keyboard and store it in the variable\r</color>\ndouble
+    height= hero.ReadDouble();\r\n\r\n<#538C51>// Print the value of the variable
+    (height), which will display the input value\r</color>\nhero.Say(\"Your Height
+    in centimeter is: \" + height);"
+  - 'NOTE: the <#F2B84B>hero.ReadString()</color> method returns a string.  Therefore,
+    you cannot get information from another data type, such as <#F2B84B>int</color>.
+    Be sure to use the correct input method for a certain data type.
+
+
+    hero.ReadString()
+    //returns a string data type
+
+    hero.ReadInt() //returns a int data type
+
+    hero.ReadDouble()
+    //returns a double data type
+
+
+    Incorrect use of these methods will throw
+    an error.'

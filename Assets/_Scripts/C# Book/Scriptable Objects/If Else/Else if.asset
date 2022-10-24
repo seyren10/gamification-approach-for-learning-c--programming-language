@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4bfe26cf06c944c944fa017abee0c7, type: 3}
+  m_Name: Else if
+  m_EditorClassIdentifier: 
+  title: Else If Statement
+  textDataArray:
+  - "<size=45>The else if Statement\r</size>\nUse the else if statement to specify
+    a new condition if the first condition is False.\n\n<size=45>Syntax</size>\r\n<#F2B84B>if</color>
+    (condition1)\r\n<#538C51>{\r\n  // block of code to be executed if condition1
+    is True\r\n} \r</color>\n<#F2B84B>else if</color> (condition2) \r\n<#538C51>{\r\n 
+    // block of code to be executed if the condition1 is false and condition2 is
+    True\r\n} \r</color>\n<#F2B84B>else</color>\r\n<#538C51>{\r\n  // block of code
+    to be executed if the condition1 is false and condition2 is False\r\n}</color>"
+  - "<size=45>Example</size>\r\n\n<color=black>C# Equivalent:</color>\nint time =
+    22;\r\nif (time < 10) \r\n{\r\n  Console.WriteLine(\"Good morning.\");\r\n} \r\nelse
+    if (time < 20) \r\n{\r\n  Console.WriteLine(\"Good day.\");\r\n} \r\nelse \r\n{\r\n 
+    Console.WriteLine(\"Good evening.\");\r\n}\r\n// Outputs \"Good evening.\""
+  - "<size=45>Example</size>\r\n\n<color=black>C# Adventures Equivalent:</color>\nint
+    time = 22;\r\nif (time < 10) \r\n{\r\n  hero.Say(\"Good morning.\");\r\n} \r\nelse
+    if (time < 20) \r\n{\r\n  hero.Say(\"Good day.\");\r\n} \r\nelse \r\n{\r\n  hero.Say(\"Good
+    evening.\");\r\n}\r\n// Outputs \"Good evening.\""
+  - '<color=black>Example explained</color>
+
+    In the previous example, time (22)
+    is greater than 10, so the <color=black>first condition</color> is <#F2B84B>False</color>.
+    The next condition, in the <#F2B84B>else if</color> statement, is also <#F2B84B>False</color>,
+    so we move on to the <#F2B84B>else</color> condition since <color=black>condition1</color>
+    and <color=black>condition2</color> is both <#F2B84B>False</color> - and print
+    to the screen "Good evening".
+
+    
+
+    However, if the time was 14, our program
+    would print "Good day."'
