@@ -401,6 +401,8 @@ namespace RoslynCSharp
         /// </summary>
         /// <param name="format">The format string</param>
         /// <param name="args">The string format arguments</param>
+
+
         public static void LogError(string format, params object[] args)
         {
             if (settings.LogLevel >= LogDetail.Errors)
@@ -408,6 +410,7 @@ namespace RoslynCSharp
                 if (args.Length == 0)
                 {
                     Debug.LogError(format);
+
                 }
                 else
                 {

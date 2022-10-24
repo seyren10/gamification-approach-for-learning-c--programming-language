@@ -38,6 +38,7 @@ public class CodeDomain
                 // Create a raw instance of our type
                 ICodeEditor instance = type.CreateInstanceRaw<ICodeEditor>();
 
+
                 //adding a delay before running the code to prevent behavior skips
                 //e.g when there's no delay, the physics system stop working for a sec
                 //that causes player to pass through the collision system
@@ -53,6 +54,7 @@ public class CodeDomain
 
     private IEnumerator AddStartDelay(ICodeEditor instance, float delay)
     {
+
         yield return new WaitForSeconds(delay);
         instance.Init();
 
@@ -60,5 +62,6 @@ public class CodeDomain
         //do auto movement, IDK what im doing >.<
         if (AutoMoveManager.Instance != null)
             AutoMoveManager.Instance.Move();
+
     }
 }

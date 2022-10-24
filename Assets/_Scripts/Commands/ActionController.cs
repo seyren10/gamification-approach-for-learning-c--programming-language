@@ -42,14 +42,19 @@ public class ActionController : MonoBehaviour
         {
             ICommand dequeuedAction = commandQueue.Dequeue();
             Debug.Log($"Current Queue: {commandQueue.Count} : Command: {dequeuedAction.ToString()}");
-            
+
             dequeuedAction.Execute();
         }
         else
         {
-            OnQueueFinish?.Invoke(this,EventArgs.Empty);
+            ActionFinish();
         }
-            
+
+    }
+
+    public void ActionFinish()
+    {
+        OnQueueFinish?.Invoke(this, EventArgs.Empty);
     }
 
     private void IOnActionComplete_OnActionComplete(object sender, System.EventArgs e)

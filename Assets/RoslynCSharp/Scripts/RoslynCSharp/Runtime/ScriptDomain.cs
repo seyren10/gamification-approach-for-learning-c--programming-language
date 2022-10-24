@@ -240,6 +240,7 @@ namespace RoslynCSharp
             get { return sandbox == null; }
         }
 
+
         // Constructor
         private ScriptDomain(string name, AppDomain sandboxDomain = null)
         {
@@ -282,7 +283,7 @@ namespace RoslynCSharp
             // Check for error
             if (asset == null)
                 throw new DllNotFoundException(string.Format("Failed to load dll from resources path '{0}'", resourcePath));
-            
+
             // Get the asset bytes and call through
             return LoadAssembly(asset.bytes, securityMode);
         }
@@ -629,7 +630,7 @@ namespace RoslynCSharp
             CheckDisposed();
             CheckCompiler();
 
-            lock(this)
+            lock (this)
             {
                 // Compile from source
                 compileResult = sharedCompiler.CompileFromSource(cSharpSource, additionalReferenceAssemblies);
@@ -660,7 +661,7 @@ namespace RoslynCSharp
             CheckCompiler();
 
             lock (this)
-            {                
+            {
                 // Compile from file
                 compileResult = sharedCompiler.CompileFromFile(cSharpFile, additionalReferenceAssemblies);
 
@@ -696,7 +697,7 @@ namespace RoslynCSharp
             // Get file paths
             string[] cSharpFilePaths = Directory.GetFiles(directoryPath, searchPattern, searchOption);
 
-            lock(this)
+            lock (this)
             {
                 // Compile from file
                 compileResult = sharedCompiler.CompileFromFiles(cSharpFilePaths, additionalReferenceAssemblies);
@@ -846,7 +847,7 @@ namespace RoslynCSharp
             CheckDisposed();
             CheckCompiler();
 
-            lock(this)
+            lock (this)
             {
                 // Compile project
                 CompileFromCSharpProject(cSharpProjectFile, additionalReferenceAssemblies);
@@ -1051,7 +1052,7 @@ namespace RoslynCSharp
         public void StaticBroadcast(string methodName)
         {
             // Process all loaded assemblies
-            foreach(ScriptAssembly assembly in EnumerateAssemblies)
+            foreach (ScriptAssembly assembly in EnumerateAssemblies)
             {
                 // Process all types
                 foreach (ScriptType type in assembly.EnumerateAllTypes())
@@ -1135,7 +1136,7 @@ namespace RoslynCSharp
         /// <param name="methodName">The name of the method to invoke</param>
         public void BroadcastAllScenes(string methodName)
         {
-            for(int i = 0; i < SceneManager.sceneCount; i++)
+            for (int i = 0; i < SceneManager.sceneCount; i++)
             {
                 Broadcast(SceneManager.GetSceneAt(i), methodName);
             }
@@ -1196,7 +1197,7 @@ namespace RoslynCSharp
         public void Broadcast(Scene targetScene, string methodName)
         {
             // Process all executing behaviour instances
-            foreach(ScriptProxy proxy in execution.BehaviourProxies)
+            foreach (ScriptProxy proxy in execution.BehaviourProxies)
             {
                 // Get behaviour instance
                 MonoBehaviour behaviour = proxy.GetInstanceAs<MonoBehaviour>(true);
@@ -1241,7 +1242,7 @@ namespace RoslynCSharp
             // Check for non-monobehaviour base type - this method only support script components
             if (typeof(MonoBehaviour).IsAssignableFrom(baseType) == false)
                 return;
-            
+
             // Process all executing behaviour instances
             foreach (ScriptProxy proxy in execution.BehaviourProxies)
             {
@@ -1298,10 +1299,10 @@ namespace RoslynCSharp
         public void BroadcastInstance(Type baseType, string methodName)
         {
             // Process all executing instances
-            foreach(ScriptProxy proxy in execution.InstanceProxies)
+            foreach (ScriptProxy proxy in execution.InstanceProxies)
             {
                 // Check for sub type
-                if(proxy.ScriptType.IsSubTypeOf(baseType) == true)
+                if (proxy.ScriptType.IsSubTypeOf(baseType) == true)
                 {
                     // Call the method
                     proxy.SafeCall(methodName);
@@ -1424,7 +1425,7 @@ namespace RoslynCSharp
             // Check for no report
             if (compileResult == null)
                 return;
-            
+
             bool loggedHeader = false;
 
             // Simple function to only output the header when one or more errors, warnings or infos will be logged
@@ -1440,19 +1441,23 @@ namespace RoslynCSharp
             // Process report
             foreach (CompilationError error in compileResult.Errors)
             {
-                if(error.IsError == true)
+                if (error.IsError == true)
                 {
                     // Log as error
                     logHeader();
                     RoslynCSharp.LogError(error.ToString());
+
+
+
+
                 }
-                else if(error.IsWarning == true)
+                else if (error.IsWarning == true)
                 {
                     // Log as warning
                     logHeader();
                     RoslynCSharp.LogWarning(error.ToString());
                 }
-                else if(error.IsInfo == true)
+                else if (error.IsInfo == true)
                 {
                     logHeader();
                     RoslynCSharp.Log(error.ToString());
@@ -1463,7 +1468,7 @@ namespace RoslynCSharp
         private void CheckDisposed()
         {
             // Check for our sandbox domain
-            if(sandbox == null)
+            if (sandbox == null)
                 throw new ObjectDisposedException("The 'ScriptDomain' has already been disposed");
         }
 
@@ -1580,7 +1585,7 @@ namespace RoslynCSharp
             // Check for compiler
             if (initCompiler == true)
                 domain.InitializeCompilerService();
-           
+
             // Make domain active
             if (makeActiveDomain == true)
                 MakeDomainActive(domain);
@@ -1595,7 +1600,7 @@ namespace RoslynCSharp
         /// <returns>A domain with the specified name or null if no matching domain was found</returns>
         public static ScriptDomain FindDomain(string domainName)
         {
-            foreach(ScriptDomain domain in activeDomains)
+            foreach (ScriptDomain domain in activeDomains)
             {
                 if (domain.name == domainName)
                     return domain;

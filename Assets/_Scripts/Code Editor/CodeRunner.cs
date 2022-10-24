@@ -38,6 +38,10 @@ public class CodeRunner : MonoBehaviour
         //disable the click button until all the actions are finished playing
         btnRunCode.enabled = false;
 
+        //CLear log error text
+        if (LogErrorUI.Instance != null)
+            LogErrorUI.Instance.ClearErrorText();
+
         //level must not reset on the first run.
         if (firstRun)
         {
