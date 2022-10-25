@@ -8,5 +8,6 @@ class Program : ICodeEditor {
 		//your code goes below
 		
         hero.Say("");
+		hero.Say("");
 	}
 }

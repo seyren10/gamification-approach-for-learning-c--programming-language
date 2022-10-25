@@ -18,7 +18,7 @@ public class AutoMoveManager : MonoBehaviour
 
     public void Move()
     {
-        if(enableAutoMove)
+        if (enableAutoMove)
             autoMoveSO.Move(Boots.Instance);
     }
 }

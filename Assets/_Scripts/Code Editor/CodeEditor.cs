@@ -41,6 +41,10 @@ public class CodeEditor : MonoBehaviour
         codeDomain.Init();
         string codeEditorModifiedText = textEditorWindow.textComponent.text;
 
+        //before inserting the code reference
+        //check first for regex goals
+        CheckForRegexGoal(codeEditorModifiedText);
+
         //insert the code references
         codeEditorModifiedText = InsertCodeReferences(codeEditorModifiedText);
 
@@ -54,7 +58,7 @@ public class CodeEditor : MonoBehaviour
             LineCodeGoal.Instance.SetCodeText(textEditorWindow.textComponent.text);
         }
 
-      
+
     }
 
     private string InsertCodeReferences(string code)
@@ -63,6 +67,18 @@ public class CodeEditor : MonoBehaviour
         string firstString = code.Substring(0, insertPosition);
 
         return string.Concat(firstString, codeReferences, code[insertPosition]);
+    }
+
+    private void CheckForRegexGoal(string text)
+    {
+        foreach (GoalSO goal in ObjectiveSO.Instance.goals)
+        {
+            if (goal.GetType() == typeof(RegexGoal))
+            {
+                RegexGoal rg = goal as RegexGoal;
+                rg.CheckPattern(text);
+            }
+        }
     }
 
 

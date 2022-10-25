@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a17510100b310344bb38de2d8141e219, type: 3}
-  m_Name: Level 2
+  m_Name: Print Goal 2
   m_EditorClassIdentifier: 
-  description: Enter the password in the <#2c3e50>hero.Say()</color> method, to finish
-    the level.
+  description: Use another <#FCDC04>hero.Say()</color> method and type <#FCDC04>"BSIT"</color>
+    in it. <#00FF41>(C# is case sensitive)</color>
   requiredAmount: 1
-  sentence: Tarlac Agricultural University
-  caseSensitive: 0
+  sentence: BSIT
+  caseSensitive: 1

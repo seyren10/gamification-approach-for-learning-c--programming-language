@@ -1,0 +1,14 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		/*insert your text in between the "" 
+		e.g hero.Say("Hi"); */
+
+		//The password is
+		//"Tarlac Agricultural University"
+        
+        hero.Say("");
+	}
+}

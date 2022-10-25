@@ -1,0 +1,426 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3307030474024841751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3307030474024841750}
+  - component: {fileID: 3307030474024841749}
+  m_Layer: 0
+  m_Name: Dialog Manager 1 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3307030474024841750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307030474024841751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3307030474024841749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3307030474024841751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d8237de1b44794cae9b925f99421c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogList:
+  - speakerName: Robo-C#
+    message: 'Hello there, welcome to <#FFDF53>C# Adventures</color>. '
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: You will be learning <#FFDF53>C#</color> today, one of the most popular
+      programming languages widely used worldwide.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: But learning C# language is challenging, especially for novice programmers
+    avatar: {fileID: 21300000, guid: 37bff81e4b3b46e43a2f428175ad3f19, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: "But don\u2019t you worry, I\u2019m here together with my colleague
+      <#FFDF53>Dr. Joven Tolentino</color> (you\u2019ll meet him later), and we will
+      help you learn the basics of C#."
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: Ok, now let me introduce myself. Im <#FFDF53>Robo-C#</color> and i will
+      be your instructor for the <#FFDF53>"Mechanics"</color> part of the game.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: I hope you're excited because this will be so much fun! Let's begin,
+      shall we?
+    avatar: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: Ok. So let's start with the <#FFDF53>Basic Controls</color>. <#FF7739>Click</color>
+      on the button to display the basic controls of the game.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -380, y: -175}
+    fadePanelPosition: {x: -116.48, y: -161.95}
+    fadePanelSize: {x: 312.94, y: 79.895}
+  - speakerName: Robo-C#
+    message: That's basically it, pretty easy right?. Now <#FF7739>close</color>
+      the control window.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 684, y: 469}
+    fadePanelPosition: {x: -10.68, y: 156.92}
+    fadePanelSize: {x: 1735.36, y: 717.63}
+  - speakerName: Robo-C#
+    message: Now that you've learned the basic controls, let's move on to the gameplay.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 684, y: 469}
+    fadePanelPosition: {x: -10.68, y: 156.92}
+    fadePanelSize: {x: 1735.36, y: 717.63}
+  - speakerName: Robo-C#
+    message: This is your character, and your goal to help him find his way to the
+      <#FFDF53>blue flag</color> in order to finish the level by writing C# codes
+      in the <#FFDF53>Code Editor</color>.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 684, y: 469}
+    fadePanelPosition: {x: -840.49, y: 50.52}
+    fadePanelSize: {x: 194.82, y: 504.84}
+  - speakerName: Robo-C#
+    message: Since I mentioned the Code Editor, let us now move on to the <#FFDF53>Code
+      Editor</color> Panel.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 684, y: 469}
+    fadePanelPosition: {x: -840.49, y: 50.52}
+    fadePanelSize: {x: 194.82, y: 504.84}
+  - speakerName: Robo-C#
+    message: This is your code editor. You will write C# codes here to provide the
+      behavior of your character.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 364, y: 251}
+    fadePanelPosition: {x: 677.62, y: 130.1}
+    fadePanelSize: {x: 533.69, y: 662.92}
+  - speakerName: Robo-C#
+    message: This button will <#FFDF53>Run</color> and <#FFDF53>evaluate</color>
+      your code for any <#FF7739>errors</color>. <#C9EAD7>Dont click it just yet.</color>
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 314, y: -165}
+    fadePanelPosition: {x: 497.29, y: -162.7}
+    fadePanelSize: {x: 173.04, y: 77.32}
+  - speakerName: Robo-C#
+    message: When things messed up and you want to <#FFDF53>reset</color> your code
+      to its original template, just click here. <#C9EAD7>Again, Dont click it just
+      yet :)</color>
+    avatar: {fileID: 21300000, guid: 37bff81e4b3b46e43a2f428175ad3f19, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 487, y: -165}
+    fadePanelPosition: {x: 672, y: -162.7}
+    fadePanelSize: {x: 173.04, y: 77.32}
+  - speakerName: Robo-C#
+    message: Ok. now for the behaviour of your character, you will be using <#FFDF53>Classes
+      and Methods</color>.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: You don't need to worry about what <#FFDF53>Classes and Methods</color>
+      are as these things are far more advanced than what we are going to learn in
+      this game.
+    avatar: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: What you need to know is that we will use <#FFDF53>Classes and Methods</color>
+      to provide behavior for your character. I hope you don't get confused with
+      that.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: To keep things simple and to avoid confusion, we made an <#FFDF53>Inventory</color>
+      for you that represents the same thing i mentioned earlier but in more intuitive
+      way.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 0, y: 0}
+    fadePanelSize: {x: 0, y: 0}
+  - speakerName: Robo-C#
+    message: This is your inventory panel. You can use an <#FFDF53>item</color> that
+      is available in your inventory, and each item has a different use. Let me walk
+      you through it.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 0, y: 0}
+    fadePanelPosition: {x: 217.93, y: 160.15}
+    fadePanelSize: {x: 356.91, y: 732.7}
+  - speakerName: Robo-C#
+    message: Here is your <#FFDF53>item</color>. You will see more of it as you progress
+      through the game.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -51, y: 330}
+    fadePanelPosition: {x: 217.93, y: 355.8}
+    fadePanelSize: {x: 356.91, y: 176.4}
+  - speakerName: Robo-C#
+    message: Each of your items has a different usage. For example, here, it says
+      <#FFDF53>"hero.Say();"</color> you should write this code in your <#FFDF53>code
+      editor</color> to use it.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 96, y: 405.7}
+    fadePanelPosition: {x: 217.93, y: 355.8}
+    fadePanelSize: {x: 356.91, y: 176.4}
+  - speakerName: Robo-C#
+    message: Now <#FF7739>click</color> on the button to view the full information
+      about the code.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 96, y: 405.7}
+    fadePanelPosition: {x: 217.93, y: 355.8}
+    fadePanelSize: {x: 356.91, y: 176.4}
+  - speakerName: Robo-C#
+    message: Here is the description of the code. It explains what this code does.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -54.5, y: 241.7}
+    fadePanelPosition: {x: 217.93, y: -30.26}
+    fadePanelSize: {x: 356.91, y: 1018.81}
+  - speakerName: Robo-C#
+    message: Here is the method signature. This is how the code is constructed. You
+      won't be needing this, especially if you just started programming, but we still
+      include it to make it more comprehensive.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -54.5, y: -66}
+    fadePanelPosition: {x: 217.93, y: -30.26}
+    fadePanelSize: {x: 356.91, y: 1018.81}
+  - speakerName: Robo-C#
+    message: <#FFDF53>PAY CLOSE ATTENTION TO THIS ONE</color>. This is how you use
+      the code in your code editor. It includes an <b>example</b>, an <b>explanation</b>,
+      and some useful <b>tips</b>. Be sure to always read the <#FFDF53>usage</color>
+      of every code in your inventory.
+    avatar: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    tutorialAction: 0
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -54.5, y: -177}
+    fadePanelPosition: {x: 217.93, y: -314.72}
+    fadePanelSize: {x: 356.91, y: 449.89}
+  - speakerName: Robo-C#
+    message: That's it. Now <#FF7739>close</color> this panel and let's talk about
+      the <#FFDF53>objective</color> of the game.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 263, y: 449}
+    fadePanelPosition: {x: 217.93, y: -10.15}
+    fadePanelSize: {x: 356.91, y: 1059.02}
+  - speakerName: Robo-C#
+    message: This is your <#FFDF53>objective</color>. It determines how many <#FFDF53>stars</color>
+      you'll get when you finish the level. Of course, you could just ignore the
+      objectives and get straight to the flag.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 263, y: 449}
+    fadePanelPosition: {x: 499.74, y: -370.51}
+    fadePanelSize: {x: 920.52, y: 338.3}
+  - speakerName: Robo-C#
+    message: But remember that in order to improve your programming skills, you should
+      try your best to finish all the objectives.
+    avatar: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 263, y: 449}
+    fadePanelPosition: {x: 499.74, y: -370.51}
+    fadePanelSize: {x: 920.52, y: 338.3}
+  - speakerName: Robo-C#
+    message: And finally, the most important section of this game.
+    avatar: {fileID: 21300000, guid: 66c8cabb0f3898d4786d9f50aa3a4a40, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 263, y: 449}
+    fadePanelPosition: {x: -901.54, y: -128.23}
+    fadePanelSize: {x: 101.43, y: 137.85}
+  - speakerName: Robo-C#
+    message: <#FFDF53>The Book of C#</color>. This serves as your reference. Here
+      you will find all the information you need about the <#FFDF53>C# programming
+      language basics</color>.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 263, y: 449}
+    fadePanelPosition: {x: -901.54, y: -128.23}
+    fadePanelSize: {x: 101.43, y: 137.85}
+  - speakerName: Robo-C#
+    message: Before diving into programming, we strongly <#FFDF53>recommend</color>
+      that you <#FFDF53>read</color> the given topic in order to gain a better understanding
+      of it.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 263, y: 449}
+    fadePanelPosition: {x: -901.54, y: -128.23}
+    fadePanelSize: {x: 101.43, y: 137.85}
+  - speakerName: Robo-C#
+    message: Okay, now <#FF7739>click</color> on the <#FFDF53>C# book</color> in
+      order to view its contents.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -1032, y: -166}
+    fadePanelPosition: {x: -901.54, y: -128.23}
+    fadePanelSize: {x: 101.43, y: 137.85}
+  - speakerName: Robo-C#
+    message: This is your C# Book Panel.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -1032, y: -166}
+    fadePanelPosition: {x: -0.39, y: 6.3809}
+    fadePanelSize: {x: 1196.65, y: 1041.1}
+  - speakerName: Robo-C#
+    message: The menu can be found here. To <#FFDF53>read</color> a topic, you will
+      need to <#FFDF53>expand</color> the menu by <#FF7739>clicking on the arrow
+      icon</color> adjacent to the topic title.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -1032, y: -166}
+    fadePanelPosition: {x: -390.79, y: -41.31}
+    fadePanelSize: {x: 359.34, y: 945.71}
+  - speakerName: Robo-C#
+    message: After you've decided on a topic. Its contents will be displayed here.
+      To <#FFDF53>switch</color> between pages, use the <#FFDF53>previous</color>
+      or <#FFDF53>next</color> buttons.
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 0
+    enablePointer: 0
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: -1032, y: -166}
+    fadePanelPosition: {x: 183.31, y: 41.71}
+    fadePanelSize: {x: 772.7, y: 935.12}
+  - speakerName: Robo-C#
+    message: That's all the information you need to know for now. <#FF7739>Close</color>
+      this window and let's <#FFDF53>run your first C# program</color> :D
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 431, y: 491}
+    fadePanelPosition: {x: 183.31, y: 41.71}
+    fadePanelSize: {x: 772.7, y: 935.12}
+  - speakerName: Robo-C#
+    message: 'Run your code and let it compile. '
+    avatar: {fileID: 21300000, guid: 6d640965f7092cf429ea3e9d3c57356a, type: 3}
+    tutorialAction: 1
+    enablePointer: 1
+    continueTrigger: {fileID: 0}
+    pointerPosition: {x: 318, y: -180}
+    fadePanelPosition: {x: 673.33, y: 153.16}
+    fadePanelSize: {x: 573.35, y: 740.81}

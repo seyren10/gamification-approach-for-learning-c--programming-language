@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
-     //cached ref
+    //cached ref
     private PlayerChat playerChat;
     private ActionController actionController;
 
-    public string Message {get; private set;}
+    public string Message { get; private set; }
 
     //instance
     public static Hero Instance;
 
     private void Awake()
     {
-     Instance = this;
+        Instance = this;
     }
 
     private void Start()
@@ -35,13 +35,21 @@ public class Hero : MonoBehaviour
         PrintGoalObjectiveCheck();
     }
 
-    private void  PrintGoalObjectiveCheck()
+    private void PrintGoalObjectiveCheck()
     {
+        foreach (GoalSO goal in ObjectiveSO.Instance.goals)
+        {
+            if (goal.GetType() == typeof(PrintGoal))
+            {
+                PrintGoal pg = goal as PrintGoal;
+                pg.CheckString(Message);
+            }
+        }
 
-        PrintGoal.Instance.CheckString(Message);
+
     }
 
-    
 
-   
+
+
 }

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d205f2aa7b925ed4d89da45589c00d89, type: 3}
-  m_Name: Printing Objective
+  m_Script: {fileID: 11500000, guid: bab5b4566dc4d1c4b884518c7ea65f7c, type: 3}
+  m_Name: variable
   m_EditorClassIdentifier: 
-  goals:
-  - {fileID: 11400000, guid: 5b8727b062751f745b0d5896837d6548, type: 2}
-  - {fileID: 11400000, guid: ef45a47b99d2b2b4d977b6da2eb12c55, type: 2}
+  description: Create 3 variables string, int, or double
+  requiredAmount: 3
+  pattern: (string|int|double)\s+\w+\s*=\s*(".+"|[0-9\.dD]+)

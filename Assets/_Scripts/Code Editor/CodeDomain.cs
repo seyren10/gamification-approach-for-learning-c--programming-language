@@ -59,9 +59,9 @@ public class CodeDomain
         instance.Init();
 
 
-        //do auto movement, IDK what im doing >.<
-        if (AutoMoveManager.Instance != null)
-            AutoMoveManager.Instance.Move();
+        // //do auto movement, IDK what im doing >.<
+        // if (AutoMoveManager.Instance != null)
+        //     AutoMoveManager.Instance.Move();
 
     }
 }

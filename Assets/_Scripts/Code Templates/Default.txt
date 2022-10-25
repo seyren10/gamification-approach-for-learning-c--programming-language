@@ -3,6 +3,6 @@ using UnityEngine;
 class Program : ICodeEditor {
 
 	public void Main(){
-		//your code goes below
+		
 	}
 }

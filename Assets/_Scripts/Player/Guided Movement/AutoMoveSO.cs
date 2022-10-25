@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName ="Scriptable Object/Guided Movement/Auto Move")]
+[CreateAssetMenu(menuName = "Scriptable Object/Guided Movement/Auto Move")]
 public class AutoMoveSO : ScriptableObject
 {
     [SerializeField] private MoveData[] moveDataArray;
     public void Move(Boots boots)
     {
-        foreach(MoveData moveData in moveDataArray)
+        foreach (MoveData moveData in moveDataArray)
         {
             var moveDir = moveData.moveDirection;
 
@@ -30,7 +30,7 @@ public class AutoMoveSO : ScriptableObject
         }
     }
 
-    
+
 }
 
 [System.Serializable]

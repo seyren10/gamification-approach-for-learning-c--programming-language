@@ -23,17 +23,17 @@ public class PrintGoal : GoalSO
     {
         var msg = message;
 
-        if(!caseSensitive)
+        if (!caseSensitive)
         {
             msg = msg.ToLower();
             sentence = sentence.ToLower();
         }
 
-        if(msg == sentence)
+        if (msg == sentence)
         {
             currentAmount++;
             Evaluate();
-            
+
             ObjectiveEvent.onGoalUpdate.Invoke();
         }
     }

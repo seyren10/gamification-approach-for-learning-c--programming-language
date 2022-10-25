@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17510100b310344bb38de2d8141e219, type: 3}
   m_Name: Print Goal
   m_EditorClassIdentifier: 
-  description: 'Your First Program!
-
-    Greet the villager by typing <#7BD498>"Hello
-    World"</color> in the <#2c3e50>hero.Say()</color> method. '
+  description: Finish the level by typing <#FCDC04>"CET"</color> in the <#FCDC04>hero.Say()</color>
+    method. <#00FF41>(C# is case sensitive)</color>
   requiredAmount: 1
-  sentence: hello world
-  caseSensitive: 0
+  sentence: CET
+  caseSensitive: 1

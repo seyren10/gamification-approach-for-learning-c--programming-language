@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab5b4566dc4d1c4b884518c7ea65f7c, type: 3}
+  m_Name: Do it Yourself
+  m_EditorClassIdentifier: 
+  description: '<#00FF41>Do it yourself</color>.
+
+    Type the <#FCDC04>hero.Say()</color>
+    method and enter your <#FCDC04>name</color> into it.
+
+    Type another <#FCDC04>hero.Say()</color>
+    method and enter your <#FCDC04>course and section</color> into it.'
+  requiredAmount: 2
+  pattern: hero.Say\(".+"\);
