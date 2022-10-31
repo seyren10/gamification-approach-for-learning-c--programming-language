@@ -6,12 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/_Scenes/Main Menu.unity
     guid: e45387f5ebc663d469a207bcbffba947
   - enabled: 1
-    path: Assets/Scenes/Levels/Basic Printing/T Level 1.unity
+    path: Assets/_Scenes/Levels/Basic Printing/T Level 1.unity
     guid: e6d99cd008fc5e342b71f005befe185c
   - enabled: 1
-    path: Assets/Scenes/Code Editor.unity
+    path: Assets/_Scenes/Levels/Basic Printing/Level 1.unity
+    guid: 7e27b9ef35ee30f429aeba0a7a77f340
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Basic Printing/Level 2.unity
+    guid: 3578bce6a32663247a795d1b6f96828a
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Basic Printing/Level 3.unity
+    guid: 82db02baf90553246b4072ecc9b086b2
+  - enabled: 1
+    path: Assets/_Scenes/Code Editor.unity
     guid: a9998434f531c094cb8947310ffbd709
   m_configObjects: {}

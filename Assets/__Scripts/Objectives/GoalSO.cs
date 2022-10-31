@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public abstract class GoalSO : ScriptableObject
+{
+    [TextArea(5, 5)] public string description;
+    public int requiredAmount;
+
+    protected int currentAmount;
+    protected bool completed;
+
+    public virtual void Init()
+    {
+        currentAmount = 0;
+        completed = false;
+    }
+
+    protected void Evaluate()
+    {
+
+        //check to see if the current goal is completed
+        if (currentAmount >= requiredAmount)
+        {
+            currentAmount = requiredAmount; // to not exceed the required amount;
+            Complete();
+        }
+    }
+
+    public int GetCurrentAmount()
+    {
+        return currentAmount;
+    }
+
+    public bool Completed()
+    {
+        return completed;
+    }
+
+    private void Complete()
+    {
+        completed = true;
+        ObjectiveEvent.onGoalCompleted.Invoke();
+    }
+
+}
