@@ -34,7 +34,7 @@ public class LogErrorUI : MonoBehaviour
     {
         if (type == LogType.Error)
         {
-            currentText += "\n" + logString;
+            currentText += "\n" + "Line: " + logString;
             DisplayError();
             ActionController.Instance.ActionFinish();
         }

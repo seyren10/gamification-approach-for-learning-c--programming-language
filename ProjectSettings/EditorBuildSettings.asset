@@ -21,6 +21,24 @@ EditorBuildSettings:
     path: Assets/_Scenes/Levels/Basic Printing/Level 3.unity
     guid: 82db02baf90553246b4072ecc9b086b2
   - enabled: 1
+    path: Assets/_Scenes/Levels/Variables/Level 4.unity
+    guid: ce82d683b3facc943979fd3352df859f
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Variables/Level 5.unity
+    guid: f60d0450f28b09d46b6bba1428a285ed
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Variables/Level 6.unity
+    guid: bda152106f3cc9444b476f77ca741466
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Variables/Level 7.unity
+    guid: c5b0b386e00c2594bbedba3d87fa4a60
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Variables/Level 8.unity
+    guid: 7b2ca4e1aa5bac84b8806032a8e10077
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Variables/Level 9.unity
+    guid: 40ce6871139eb3a43a6c062bb03b86a6
+  - enabled: 1
     path: Assets/_Scenes/Code Editor.unity
     guid: a9998434f531c094cb8947310ffbd709
   m_configObjects: {}
