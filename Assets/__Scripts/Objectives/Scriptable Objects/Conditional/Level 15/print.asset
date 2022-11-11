@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17510100b310344bb38de2d8141e219, type: 3}
+  m_Name: print
+  m_EditorClassIdentifier: 
+  description: 'Enter <#BEDB39>"Success"</color> in <#FFE11A>hero.Say(" ");</color>
+    method on <#FFE11A>Line 12</color>.
+
+    <#BEDB39>e.g hero.Say("Success");</color>
+
+
+    <i><size=30>Note:
+    the above code will not run if the condition is false.</i></size>'
+  requiredAmount: 1
+  sentence: Success
+  caseSensitive: 1

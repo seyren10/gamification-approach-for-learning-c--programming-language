@@ -1,0 +1,23 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		//your code goes below this line
+		string name1 = "roy123";
+		string name2 = "roY123";
+
+		if(name1 == name2)
+		{
+			/*If you think the result is true, 
+			place your code below this line. */
+
+		}
+		else
+		{
+			/*If you think the result is false, 
+			place your code below this line. */
+
+		}
+	}
+}

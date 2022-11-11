@@ -1,0 +1,19 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		int c = 32;
+		int d = 44;
+
+		if(c < d) // <- change this
+		{
+			hero.Say("Objective failed.");
+		}
+		else
+		{
+			//your code goes below this line
+
+		}
+	}
+}

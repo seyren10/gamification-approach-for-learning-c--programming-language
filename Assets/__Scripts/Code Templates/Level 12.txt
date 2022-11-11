@@ -1,0 +1,11 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		//your code goes below this line
+		int x = 3;
+		int y = 5;
+		hero.Say(x > y);
+	}
+}

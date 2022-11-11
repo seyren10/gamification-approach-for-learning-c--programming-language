@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17510100b310344bb38de2d8141e219, type: 3}
+  m_Name: equal
+  m_EditorClassIdentifier: 
+  description: '<size=35><#FFE11A>Make x equal to y</color></size>
+
+    Manipulate
+    the <#BEDB39>x</color> or <#BEDB39>y</color> values to make the answer <#FFE11A>true</color>.'
+  requiredAmount: 1
+  sentence: True
+  caseSensitive: 1

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab5b4566dc4d1c4b884518c7ea65f7c, type: 3}
+  m_Name: make true
+  m_EditorClassIdentifier: 
+  description: 'Change the <#FFE11A>comparison operator</color> inside the <#BEDB39>if
+    condition block</color> on <#FFE11A>line 9</color> to make the condition true.
+
+
+    <size=30><i>Tip:
+    Read the comments in your code editor</i></size>'
+  requiredAmount: 1
+  pattern: if\s*\(\s*a\s*==\s*b\s*\)
+  targetLine: 0
+  targetIndex: 0
+  captureGroup: 0
+  groupIndex: 0
+  startPattern: 
+  endPattern: 

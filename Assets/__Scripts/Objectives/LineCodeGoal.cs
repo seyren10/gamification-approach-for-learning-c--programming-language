@@ -25,6 +25,7 @@ public class LineCodeGoal : GoalSO
 
     public void EvaluateLineCount()
     {
+        Debug.Log("Line Code Count: " + lineCodeCount);
         //added a different goal incrementation
         if (lineCodeCount <= maxLineCode)
         {
