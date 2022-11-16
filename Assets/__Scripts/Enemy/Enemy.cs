@@ -9,7 +9,11 @@ public class Enemy : MonoBehaviour
     private Health health;
 
     //configuration
+    [Header("Naming")]
+    [SerializeField] private bool multipleName;
+    [SerializeField] private string[] nameArray;
     [SerializeField] private string enemyName;
+    [Header("Battling")]
     [SerializeField] private float walkSpeed;
     [SerializeField] private int damage;
     [SerializeField] private float attackRange;
@@ -27,6 +31,8 @@ public class Enemy : MonoBehaviour
     private Health playerHealth;
     private float attackTime;
     private bool canAttack;
+
+    private string currentName;
 
     //properties
     public bool CanAttack
@@ -54,6 +60,13 @@ public class Enemy : MonoBehaviour
 
         attackTime = timeBtwnAttack;
         canAttack = true;
+
+        if (multipleName)
+        {
+            currentName = nameArray[Random.Range(0, nameArray.Length)];
+        }
+        else
+            currentName = enemyName;
     }
 
     private void Update()
@@ -98,7 +111,7 @@ public class Enemy : MonoBehaviour
 
     public string GetEnemyName()
     {
-        return enemyName;
+        return currentName;
     }
 
     //called in animation event

@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 public class PlayerInputUI : MonoBehaviour
 {
     [SerializeField] private GameObject inputUI;
+    [SerializeField] private TMP_InputField inputField;
+    [SerializeField] private TMP_Text enemyNameText;
 
-    public string inputText;
+    [HideInInspector] public string inputText;
 
     private string enemyName;
 
@@ -30,12 +32,12 @@ public class PlayerInputUI : MonoBehaviour
 
     public void SetInputText()
     {
-        inputText = inputUI.transform.Find("inputField").GetComponent<TMP_InputField>().text;
+        inputText = inputField.text;
     }
 
     public void SetEnemyNameUI(string name)
     {
         enemyName = name;
-        transform.Find("enemyNameText").GetComponent<TMP_Text>().text = "Enemy Name: " + "<#1F8A70>" + enemyName + "</color>";
+        enemyNameText.text = "Enemy Name: " + "<#1F8A70>" + enemyName + "</color>";
     }
 }

@@ -1,0 +1,22 @@
+using UnityEngine;
+
+class Program : ICodeEditor {
+
+	public void Main(){
+		//Approach the enemy
+		boots.MoveRight(1);
+
+		//make a variable
+		//and store the value of user input
+		string enemyName = hero.ReadString();
+
+		//attack the enemy 2x
+		//by passing the string variable above
+		sickle.Attack(enemyName);
+		sickle.Attack(enemyName);
+
+		//proceed to the finish line
+		boots.MoveRight(1);
+
+	}
+}

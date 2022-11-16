@@ -14,16 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 2
   itemMethods:
-  - methodName: hero.Say();
-    methodSignature: public void Say(object message);
-    methodDesc: Use to display a message on your hero's bubble chat.
-    methodUsage: hero.Say("Hello World!");
-    usageDescription: "the above example will display a \"Hello World\" message without
-      the double quote (\"\") on your hero's bubble chat.\n\n<#ff0000>TIP:</color>
-      \nyou can display any data type on this method.\nfor example:\n\"!$(!)(@Uqwtqwt\"
-      for strings\n'a' for characters\n123 for int\n124.525 for double\nYou can also
-      do arithmethic operations like typing\nhero.Say(3+5) and it will output 8 in
-      your player's bubble chat."
   - methodName: hero.ReadString();
     methodSignature: public string ReadString();
     methodDesc: Use to get user input at runtime.
@@ -34,4 +24,14 @@ MonoBehaviour:
       <#BEDB39>myInput</color> = <#FFE11A>hero.ReadString();</color>\n-> and you
       type <#BEDB39>Hello World</color> as an input, your variable <#BEDB39>myInput</color>
       will store the value <#FFE11A>Hello World</color>.\n"
+  - methodName: hero.Say();
+    methodSignature: public void Say(object message);
+    methodDesc: Use to display a message on your hero's bubble chat.
+    methodUsage: hero.Say("Hello World!");
+    usageDescription: "the above example will display a \"Hello World\" message without
+      the double quote (\"\") on your hero's bubble chat.\n\n<#ff0000>TIP:</color>
+      \nyou can display any data type on this method.\nfor example:\n\"!$(!)(@Uqwtqwt\"
+      for strings\n'a' for characters\n123 for int\n124.525 for double\nYou can also
+      do arithmethic operations like typing\nhero.Say(3+5) and it will output 8 in
+      your player's bubble chat."
   graphic: {fileID: 1907247573116742192, guid: 509d67859e52ba844919fc961e8d7ade, type: 3}
