@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Threading.Tasks;
 public class Hero : MonoBehaviour
 {
     //cached ref
     private PlayerChat playerChat;
+    private PlayerInput playerInput;
     private ActionController actionController;
 
     public string Message { get; private set; }
@@ -21,6 +22,7 @@ public class Hero : MonoBehaviour
     private void Start()
     {
         playerChat = PlayerChat.Instance;
+        playerInput = PlayerInput.Instance;
         actionController = ActionController.Instance;
     }
 
@@ -34,6 +36,15 @@ public class Hero : MonoBehaviour
 
         PrintGoalObjectiveCheck();
     }
+
+    public string ReadString()
+    {
+        ReadStringCommand readStringCommand = new ReadStringCommand(playerInput);
+        actionController.AddCommand(readStringCommand);
+        return "";
+    }
+
+
 
     private void PrintGoalObjectiveCheck()
     {

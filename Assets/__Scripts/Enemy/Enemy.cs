@@ -26,6 +26,20 @@ public class Enemy : MonoBehaviour
     private Transform playerTransform;
     private Health playerHealth;
     private float attackTime;
+    private bool canAttack;
+
+    //properties
+    public bool CanAttack
+    {
+        get
+        {
+            return canAttack;
+        }
+        set
+        {
+            canAttack = value;
+        }
+    }
 
 
     private void Awake()
@@ -39,6 +53,7 @@ public class Enemy : MonoBehaviour
         health.OnKill.AddListener(Health_OnKill);
 
         attackTime = timeBtwnAttack;
+        canAttack = true;
     }
 
     private void Update()
@@ -89,18 +104,24 @@ public class Enemy : MonoBehaviour
     //called in animation event
     public void Attack()
     {
-        //play attack animation
-        animator.SetTrigger("attack");
-
-        //check to see if the target exist and there's a health component attach to it
-        if (playerTransform != null && playerTransform.GetComponent<Health>() != null)
+        //check if enemy can perform an attack
+        if (canAttack)
         {
-            //get the health component of the target
-            playerHealth = playerTransform.GetComponent<Health>();
-            //attack the target
-            playerHealth.TakeDamage(damage);
+            //play attack animation
+            animator.SetTrigger("attack");
+
+            //check to see if the target exist and there's a health component attach to it
+            if (playerTransform != null && playerTransform.GetComponent<Health>() != null)
+            {
+                //get the health component of the target
+                playerHealth = playerTransform.GetComponent<Health>();
+                //attack the target
+                playerHealth.TakeDamage(damage);
+            }
         }
     }
+
+
 
     #region "EVENT CALL"
     private void Health_OnTakeDamage()
@@ -113,6 +134,9 @@ public class Enemy : MonoBehaviour
     {
         //invoke the objective goal
         ObjectiveEvent.onEnemyKill.Invoke();
+
+        //unset weapon as input
+        PlayerWeapon.Instance.UseByInput = false;
     }
     #endregion
 

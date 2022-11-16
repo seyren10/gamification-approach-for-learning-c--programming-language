@@ -5,6 +5,7 @@ using System;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private LevelFinishUI levelFinishUI;
+    [SerializeField] private GameObject LevelFailedUI;
     [SerializeField] private StarSystem starSystem;
 
 
@@ -13,6 +14,7 @@ public class LevelManager : MonoBehaviour
     {
         //event: when user finish the level
         LevelEvent.OnLevelCompleted.AddListener(EvaluateStar);
+        LevelEvent.OnLevelFailed.AddListener(ShowLevelFailedUI);
     }
 
     private void EvaluateStar()
@@ -23,6 +25,8 @@ public class LevelManager : MonoBehaviour
         starSystem.SetCurrent(objective.GetCompletedGoalCount());
         starSystem.SetTotal(objective.GetTotalGoals());
 
+        //prevent enemies from attack
+        DisableEnemyAttack();
         ShowLevelFinishUI();
     }
 
@@ -32,6 +36,19 @@ public class LevelManager : MonoBehaviour
 
         //get the total star
         levelFinishUI.Star = starSystem.GetStarCount();
+    }
+
+    private void ShowLevelFailedUI()
+    {
+        LevelFailedUI.SetActive(true);
+    }
+
+    private void DisableEnemyAttack()
+    {
+        foreach (Enemy e in FindObjectsOfType<Enemy>())
+        {
+            e.CanAttack = false;
+        }
     }
 }
 

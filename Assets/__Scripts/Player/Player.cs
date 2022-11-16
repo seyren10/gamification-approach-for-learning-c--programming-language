@@ -23,11 +23,25 @@ public class Player : MonoBehaviour
     {
         //event: when enemy hit the player
         health.OnTakeDamage.AddListener(Health_OnTakeDamage);
+        health.OnKill.AddListener(PlayerDie);
+        LevelEvent.OnRunCode.AddListener(ResetCharacter);
+
+
+    }
+
+    private void ResetCharacter()
+    {
+        health.ResetHealth();
     }
 
     private void Health_OnTakeDamage()
     {
         //play hurt animation
         animator.SetTrigger("hurt");
+    }
+
+    private void PlayerDie()
+    {
+        LevelEvent.OnLevelFailed.Invoke();
     }
 }

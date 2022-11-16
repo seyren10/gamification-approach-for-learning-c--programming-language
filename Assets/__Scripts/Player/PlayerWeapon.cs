@@ -23,6 +23,8 @@ public class PlayerWeapon : MonoBehaviour, IOnactionComplete
     [SerializeField] private Vector2 offset;
     [SerializeField] private LayerMask whatIsEnemy;
 
+    public bool UseByInput { get; set; }
+
     public event EventHandler onActionComplete;
 
     private void Awake()
@@ -35,7 +37,14 @@ public class PlayerWeapon : MonoBehaviour, IOnactionComplete
 
     public void Attack(string enemyName)
     {
-        this.enemyName = enemyName;
+        if (UseByInput)
+        {
+            this.enemyName = PlayerInputUI.Instance.inputText;
+        }
+        else
+        {
+            this.enemyName = enemyName;
+        }
 
         //check if there's an enemy nearby
         Collider2D[] enemiesDetected = Physics2D.OverlapBoxAll(transform.position + (Vector3)offset, DetectionBoxSize, 0f, whatIsEnemy);

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1016dbfa649087e43975430425d271b4, type: 3}
+  m_Name: Input Item List L20
+  m_EditorClassIdentifier: 
+  list:
+  - {fileID: 11400000, guid: e4094ebea1db55848bb961688000aae1, type: 2}
+  - {fileID: 11400000, guid: 45b91097b0392974e895b5e5dd9befbb, type: 2}
+  - {fileID: 11400000, guid: af8e53a1e17f1ef4ea05b40b6c6dd9f6, type: 2}

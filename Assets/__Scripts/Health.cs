@@ -8,6 +8,23 @@ public class Health : MonoBehaviour
     //state
     private int currentHealth;
 
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        //event trigger:
+        OnTakeDamage?.Invoke();
+    }
+
+    public int GetHealth()
+    {
+        return currentHealth;
+    }
+
+    private int GetMaxHealth()
+    {
+        return maxHealth;
+    }
+
     //events
     [HideInInspector] public UnityEvent OnTakeDamage;
     [HideInInspector] public UnityEvent OnKill;

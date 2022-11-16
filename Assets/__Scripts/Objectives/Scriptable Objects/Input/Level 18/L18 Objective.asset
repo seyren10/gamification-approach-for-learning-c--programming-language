@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d205f2aa7b925ed4d89da45589c00d89, type: 3}
+  m_Name: L18 Objective
+  m_EditorClassIdentifier: 
+  goals:
+  - {fileID: 11400000, guid: ec8322e2b5be06b43b6d1eb535f562a5, type: 2}
+  - {fileID: 11400000, guid: fc583c6502435ca48ad9ee8509938932, type: 2}

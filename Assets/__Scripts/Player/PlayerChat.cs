@@ -6,7 +6,7 @@ public class PlayerChat : MonoBehaviour, IOnactionComplete
 {
     //reference
     [SerializeField] private PlayerChatUI playerChatUI;
-    
+
     //config
     [SerializeField] private float msgDispTime = 3f;
 
@@ -36,6 +36,6 @@ public class PlayerChat : MonoBehaviour, IOnactionComplete
         playerChatUI.Hide();
 
         //action completed
-        onActionComplete?.Invoke(this,EventArgs.Empty);
+        onActionComplete?.Invoke(this, EventArgs.Empty);
     }
 }
