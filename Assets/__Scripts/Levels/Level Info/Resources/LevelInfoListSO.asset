@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a837588f98e29e74db1854a08d88f70b, type: 3}
+  m_Name: LevelInfoListSO
+  m_EditorClassIdentifier: 
+  list:
+  - {fileID: 11400000, guid: 02ca577c8bab08645b1a7d6be8982ad1, type: 2}
+  - {fileID: 11400000, guid: 8b311189d062ae544883765fd932169f, type: 2}
+  - {fileID: 11400000, guid: 4e2380a70f6a1cf4288d33669aa62c1d, type: 2}
+  - {fileID: 11400000, guid: 939a83b4f497bf345866534f81130306, type: 2}
+  - {fileID: 11400000, guid: 5dad95304354b9141a97fb1c7a025f98, type: 2}
+  - {fileID: 11400000, guid: dcdeb2e24e9716e409520af87ebe311b, type: 2}
+  - {fileID: 11400000, guid: 2d47d5aab237ea642ba7bcd3b1a5284b, type: 2}
+  - {fileID: 11400000, guid: 5bea3c847262c81489900e763776fbcb, type: 2}
+  - {fileID: 11400000, guid: 95d1fc299919b9d49a4043aca6f45eb9, type: 2}
+  - {fileID: 11400000, guid: b70efd539d724374bb79827074537f14, type: 2}
+  - {fileID: 11400000, guid: 892f56377f2a5de4389cceee0e1bfb1d, type: 2}
+  - {fileID: 11400000, guid: fec67bf1cbc1d824f9c3cb7e7065e0ca, type: 2}
+  - {fileID: 11400000, guid: 04128dc7af16521478dfb140798a4d35, type: 2}
+  - {fileID: 11400000, guid: b660d957796264f4ab17037edc7f3a11, type: 2}
+  - {fileID: 11400000, guid: 2b31ac4ed4a584b488cdb00ed7c7fccd, type: 2}
+  - {fileID: 11400000, guid: 7fc86a2aec2c15c4ebb22e864f0d752d, type: 2}
+  - {fileID: 11400000, guid: 21c0f73f16993d1478b45fb55fb9669b, type: 2}
+  - {fileID: 11400000, guid: 09fd1f67bdf88654088ed74ffc8bf45f, type: 2}
+  - {fileID: 11400000, guid: b329b1d24f947d74cba92150473e84ae, type: 2}
+  - {fileID: 11400000, guid: e8b6aeb59ae715b4bbf9ce72673028bb, type: 2}
+  - {fileID: 11400000, guid: f9ba82b1599f0994fba486fd664ac368, type: 2}
+  - {fileID: 11400000, guid: a89cd6d1a93cef14ebe6a3271994a611, type: 2}

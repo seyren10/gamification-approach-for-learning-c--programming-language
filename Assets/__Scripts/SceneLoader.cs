@@ -8,12 +8,26 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadInGameCodeEditor()
     {
+        InitializeEvents();
         SceneManager.LoadScene("Code Editor");
     }
 
     public void LoadMainMenu()
     {
+        InitializeEvents();
         SceneManager.LoadScene("Main Menu");
+    }
+
+    public void LoadCredits()
+    {
+        InitializeEvents();
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void LoadLevelSelection()
+    {
+        InitializeEvents();
+        SceneManager.LoadScene("Level Selection");
     }
 
     public void LoadNextScene()
@@ -22,6 +36,17 @@ public class SceneLoader : MonoBehaviour
 
         var index = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(index + 1);
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        InitializeEvents();
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
     public void ReloadScene()

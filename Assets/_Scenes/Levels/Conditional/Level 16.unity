@@ -377,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842862317428014944, guid: 6ebb70188fb3c704f8a0c63aea4d4386, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2824059
+      value: -1.2889795
       objectReference: {fileID: 0}
     - target: {fileID: 842862317428014944, guid: 6ebb70188fb3c704f8a0c63aea4d4386, type: 3}
       propertyPath: m_LocalPosition.y
@@ -595,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Canvas L16
       objectReference: {fileID: 0}
+    - target: {fileID: 3260197096451354337, guid: c4b1fdb14608ac14488e5ee8899c3a1c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -373.72998
+      objectReference: {fileID: 0}
     - target: {fileID: 3260197096589150203, guid: c4b1fdb14608ac14488e5ee8899c3a1c, type: 3}
       propertyPath: objective
       value: 
@@ -627,6 +631,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -25
       objectReference: {fileID: 0}
+    - target: {fileID: 8067909993558338218, guid: c4b1fdb14608ac14488e5ee8899c3a1c, type: 3}
+      propertyPath: levelInfoSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 21c0f73f16993d1478b45fb55fb9669b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4b1fdb14608ac14488e5ee8899c3a1c, type: 3}
 --- !u!4 &1082927040
@@ -697,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981421999720796970, guid: a65989318fd222b4c907207fea70164c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2824059
+      value: -1.2889795
       objectReference: {fileID: 0}
     - target: {fileID: 3981421999720796970, guid: a65989318fd222b4c907207fea70164c, type: 3}
       propertyPath: m_LocalPosition.y

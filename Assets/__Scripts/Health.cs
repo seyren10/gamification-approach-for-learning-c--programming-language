@@ -60,7 +60,6 @@ public class Health : MonoBehaviour
     private void OnDestroy()
     {
         //clear all listeners to avoid memory leaks
-        Debug.Log("destroyed");
         OnKill.RemoveAllListeners();
         OnTakeDamage.RemoveAllListeners();
     }

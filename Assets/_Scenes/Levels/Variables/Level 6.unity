@@ -453,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 842862317428014944, guid: 6ebb70188fb3c704f8a0c63aea4d4386, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2667961
+      value: -1.2889795
       objectReference: {fileID: 0}
     - target: {fileID: 842862317428014944, guid: 6ebb70188fb3c704f8a0c63aea4d4386, type: 3}
       propertyPath: m_LocalPosition.y
@@ -510,7 +510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981421999720796970, guid: a65989318fd222b4c907207fea70164c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2667961
+      value: -1.2889795
       objectReference: {fileID: 0}
     - target: {fileID: 3981421999720796970, guid: a65989318fd222b4c907207fea70164c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -811,20 +811,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 305956877817330968, guid: 0ed4bec9fb359444c9096021908578cf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 305956877817330968, guid: 0ed4bec9fb359444c9096021908578cf, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 305956877817330968, guid: 0ed4bec9fb359444c9096021908578cf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 98.1
       objectReference: {fileID: 0}
     - target: {fileID: 305956877817330968, guid: 0ed4bec9fb359444c9096021908578cf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -25
       objectReference: {fileID: 0}
+    - target: {fileID: 3661382414670718035, guid: 0ed4bec9fb359444c9096021908578cf, type: 3}
+      propertyPath: levelInfoSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d47d5aab237ea642ba7bcd3b1a5284b, type: 2}
     - target: {fileID: 5007402826393683760, guid: 0ed4bec9fb359444c9096021908578cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

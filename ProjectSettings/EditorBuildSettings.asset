@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Main Menu.unity
     guid: e45387f5ebc663d469a207bcbffba947
   - enabled: 1
+    path: Assets/_Scenes/Level Selection.unity
+    guid: fcab5f930cfbe964cbae9b84394b7ed3
+  - enabled: 1
     path: Assets/_Scenes/Levels/Basic Printing/T Level 1.unity
     guid: e6d99cd008fc5e342b71f005befe185c
   - enabled: 1
@@ -38,6 +41,45 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Levels/Variables/Level 9.unity
     guid: 40ce6871139eb3a43a6c062bb03b86a6
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Operators/Level 10.unity
+    guid: 243c41bb8ea3d5c41a767a24983a8564
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Operators/Level 11.unity
+    guid: 3179c8b822965d64d8e9f0613c045eec
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Conditional/Level 12.unity
+    guid: 063c8f3304f767b4293fe9636527b9eb
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Conditional/Level 13.unity
+    guid: 1a5571f1410251445b596c56f44ba385
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Conditional/Level 14.unity
+    guid: c00cf52b13eebb94e97b3a201ab3d4c7
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Conditional/Level 15.unity
+    guid: 6ef8e25ed6cc62c48929343c80a14b5d
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Conditional/Level 16.unity
+    guid: 7b8fbebbb295af347a4e6f24c89bf4a4
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Conditional/Level 17.unity
+    guid: 4bcea58015dc059478ea1b78ac8c2fb1
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Input/Level 18.unity
+    guid: e54a5a3987496e745bef30e8e3d283e2
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Input/Level 19.unity
+    guid: 60dd70cd274064749bd95eef65ae0d91
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Input/Level 20.unity
+    guid: 13a4b2abf071b36478316fa051ce90c6
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Input/Level 21.unity
+    guid: 828a1eb96f3ecb74a8c9b8c7c79d73e3
+  - enabled: 1
+    path: Assets/_Scenes/Credits.unity
+    guid: 8675bf9011300f54c896eaa1b0fd1968
   - enabled: 1
     path: Assets/_Scenes/Code Editor.unity
     guid: a9998434f531c094cb8947310ffbd709

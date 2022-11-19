@@ -9,6 +9,10 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private StarSystem starSystem;
 
 
+    public int GetStarCount()
+    {
+        return starSystem.GetStarCount();
+    }
 
     private void Start()
     {
@@ -36,6 +40,22 @@ public class LevelManager : MonoBehaviour
 
         //get the total star
         levelFinishUI.Star = starSystem.GetStarCount();
+
+
+        //save the total star count
+        LevelInfoManager.Instance.GetLevelInfoSO.SaveGatheredStar(starSystem.GetStarCount());
+        //unlocked next level
+        UnlockLevel();
+    }
+
+    private static void UnlockLevel()
+    {
+        var levelInfoList = Resources.Load<LevelInfoListSO>(typeof(LevelInfoListSO).Name).list;
+        var nextLevel = levelInfoList.IndexOf(LevelInfoManager.Instance.GetLevelInfoSO) + 1;
+        if (nextLevel < levelInfoList.Count)
+        {
+            levelInfoList[nextLevel].SaveLevelStatus(true);
+        }
     }
 
     private void ShowLevelFailedUI()
